@@ -1,0 +1,25 @@
+.button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: red;
+}
+
+.medium {
+  width: 200px;
+  padding: O 10px 20px;
+  font-size: 16px;
+  background-color: red;
+}
+
+.large {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: green;
+}
