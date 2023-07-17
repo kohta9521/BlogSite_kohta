@@ -1,0 +1,14 @@
+.titleBox {
+  width: 70%;
+  height: 80px;
+  margin: 70px auto;
+  background-color: gray;
+}
+
+/* Props Css */
+.small {
+}
+.medium {
+}
+.large {
+}
