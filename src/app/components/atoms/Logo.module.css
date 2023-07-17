@@ -1,6 +1,7 @@
 .logoArea {
   display: block;
   cursor: pointer;
+  padding: 10px;
 }
 .img {
   width: 100%;
