@@ -15,11 +15,17 @@
   .container {
     width: 100%;
   }
+  .topBox {
+    display: none;
+  }
 }
 
 /* スマートフォン */
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
+  }
+  .topBox {
+    display: none;
   }
 }
