@@ -1,0 +1,14 @@
+.listItem {
+  display: block;
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+  background-color: gray;
+}
+
+.small {
+}
+.medium {
+}
+.large {
+}
