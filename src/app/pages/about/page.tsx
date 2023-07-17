@@ -2,11 +2,14 @@ import React, {FC } from "react";
 
 // css import
 import styles from "./AboutPage.module.css";
+import MainLayout from "@/app/components/templates/MainLayout";
 
 const AboutPage: React.FC = () => {
   return (
     <>
-      <h1>About page!</h1>
+      <MainLayout>
+        <h1>About page!</h1>
+      </MainLayout>
     </>
   )
 }
