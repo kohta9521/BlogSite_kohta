@@ -1,6 +1,6 @@
 .newBlogBox {
   width: 80%;
-  height: 700px;
+  padding: 10px;
   margin: 0 auto;
   background-color: gray;
 }

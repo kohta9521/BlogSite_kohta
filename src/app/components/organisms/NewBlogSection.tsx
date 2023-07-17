@@ -11,6 +11,8 @@ const NewBlogSection: React.FC = () => {
     <div className={styles.newBlogBox}>
       <Title id={1} text="最新記事" link="#blog" size="medium"  />
       <BlogCard />
+      <BlogCard />
+      <BlogCard />
     </div>
   )
 }

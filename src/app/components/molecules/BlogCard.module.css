@@ -1,7 +1,9 @@
 .blogCardBox {
   width: 90%;
-  height: 190px;
+  height: 200px;
   margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
   background-color: red;
 }
 /* タブレット */
