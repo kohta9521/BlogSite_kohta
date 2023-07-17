@@ -5,6 +5,11 @@
   bottom: 0;
   padding: 10px;
 }
+.heroTitleBox:hover {
+  background-color: black;
+  width: 80%;
+  border-radius: 20px;
+}
 .title {
   display: block;
   width: 100%;
