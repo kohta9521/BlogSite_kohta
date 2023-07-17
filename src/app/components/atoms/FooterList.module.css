@@ -7,6 +7,10 @@
   cursor: pointer;
   text-decoration: none;
 }
+.listItem:hover {
+  color: red;
+  transition: 0.5s;
+}
 
 /* props css */
 .white {
@@ -16,11 +20,14 @@
   color: white;
 }
 .small {
-  font-size: 15px;
+  font-size: 13px;
 }
 .medium {
   font-size: 20px;
   font-weight: 550;
+  margin-bottom: 20px;
 }
 .large {
+  font-size: 24px;
+  font-weight: 600;
 }

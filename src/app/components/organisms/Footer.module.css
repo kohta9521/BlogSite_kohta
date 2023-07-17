@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   height: 400px;
-  background-color: gray;
+  background-color: #333333;
   overflow: hidden;
 }
 .container {
@@ -16,7 +16,6 @@
   width: 100%;
   height: 300px;
   margin-top: 30px;
-  background-color: red;
   display: flex;
   justify-content: space-between;
 }
@@ -25,11 +24,9 @@
   height: 100%;
 }
 .bottomBox {
-  position: absolute;
-  bottom: 0;
-  dispaly: box;
+  width: 100%;
   margin: 0 auto;
-  background-color: red;
+  margin-left: calc(50% - 150px);
 }
 
 /* タブレット */
@@ -37,13 +34,13 @@
   .container {
     width: 100%;
   }
-  .topBox {
-    display: none;
-  }
 }
 
 /* スマートフォン */
 @media screen and (max-width: 768px) {
+  .footer {
+    height: 300px;
+  }
   .container {
     width: 100%;
   }
