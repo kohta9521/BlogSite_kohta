@@ -1,0 +1,13 @@
+.blogCardBox {
+  width: 90%;
+  height: 190px;
+  margin: 0 auto;
+  background-color: red;
+}
+/* タブレット */
+@media screen and (max-width: 1280px) {
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+}
