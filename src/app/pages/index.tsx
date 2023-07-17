@@ -5,7 +5,9 @@ import MainLayout from "../components/templates/MainLayout";
 const HomePage: React.FC = () => {
   return (
     <div>
-      <MainLayout />
+      <MainLayout>
+        <h1>Home page!</h1>
+      </MainLayout>
     </div>
   )
 }

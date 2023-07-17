@@ -9,7 +9,7 @@ import ListArea from "../molecules/ListArea";
 const Header: React.FC = () => {
   return (
     <div className={styles.header}>
-      <Logo size="large" link="/" />
+      <Logo size="large" link="/pages/blog" />
       <ListArea />
     </div>
   )
