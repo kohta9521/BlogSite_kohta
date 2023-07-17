@@ -4,3 +4,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* タブレット */
+@media screen and (max-width: 1280px) {
+  .listArea {
+    display: none;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+  .listArea {
+    display: none;
+  }
+}
