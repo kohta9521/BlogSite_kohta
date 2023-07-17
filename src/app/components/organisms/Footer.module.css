@@ -1,13 +1,35 @@
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 400px;
   background-color: gray;
+  overflow: hidden;
 }
 .container {
   width: 80%;
   height: 100%;
   max-width: 1500px;
   margin: 0 auto;
+}
+.topBox {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 20%;
+  height: 100%;
+}
+.bottomBox {
+  position: absolute;
+  bottom: 0;
+  dispaly: box;
+  margin: 0 auto;
+  background-color: red;
 }
 
 /* タブレット */

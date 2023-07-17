@@ -1,14 +1,26 @@
 .listItem {
+  display: flex;
+  width: 100%;
+  height: 20xp;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* props css */
 .white {
+  color: white;
 }
 .gray {
+  color: white;
 }
 .small {
+  font-size: 15px;
 }
 .medium {
+  font-size: 20px;
+  font-weight: 550;
 }
 .large {
 }
