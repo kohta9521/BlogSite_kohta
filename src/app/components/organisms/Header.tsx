@@ -3,12 +3,14 @@ import React, { FC } from "react";
 
 // css import
 import styles from "./Header.module.css";
+import ListArea from "../molecules/ListArea";
 
 
 const Header: React.FC = () => {
   return (
     <div className={styles.header}>
-      <Logo size="medium" link="/" />
+      <Logo size="large" link="/" />
+      <ListArea />
     </div>
   )
 }
