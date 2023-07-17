@@ -3,12 +3,17 @@
   height: 500px;
   margin-top: 10px;
   background-color: black;
+  background: rgba(0, 0, 0, 0.84);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(0, 0, 0, 0.09);
 }
 .container {
+  position: relative;
   width: 70%;
   height: 100%;
   margin: 0 auto;
-  background-color: gray;
 }
 
 /* タブレット */
