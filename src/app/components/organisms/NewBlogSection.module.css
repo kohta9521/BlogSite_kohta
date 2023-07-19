@@ -11,4 +11,10 @@
 
 /* スマートフォン */
 @media screen and (max-width: 768px) {
+  .newBlogBox {
+    /* 以下のmargin-topは後々hero関連コンポーネントのレスポンシブ修正でmust削除 */
+    margin-top: 500px;
+    width: 95%;
+    padding: 0;
+  }
 }

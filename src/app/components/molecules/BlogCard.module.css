@@ -38,4 +38,25 @@
 
 /* スマートフォン */
 @media screen and (max-width: 768px) {
+  .blogCardBox {
+    width: 100%;
+    height: 600px;
+    display: block;
+  }
+  .leftBox {
+    width: 100%;
+    height: 300px;
+  }
+  .dateBox {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .dateText {
+    line-height: 30px;
+  }
+  .imgBox {
+    width: 100%;
+    height: 250px;
+  }
 }
