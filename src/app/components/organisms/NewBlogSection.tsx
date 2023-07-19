@@ -50,9 +50,9 @@ const NewBlogSection: React.FC = () => {
           </div>
         ))
       }
-      {/* <BlogCard />
       <BlogCard />
-      <BlogCard /> */}
+      <BlogCard />
+      <BlogCard />
     </div>
   )
 }
