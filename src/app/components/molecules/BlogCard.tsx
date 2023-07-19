@@ -31,7 +31,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ id, date, imgUrl, title, tags, auth
         </div>
       </div>
 
-      <div className={styles.textBox}>
+      <div className={styles.rightBox}>
 {/*blogTitle comopnetns and BlogExplatin components and tag components and blogMoveButton components */}
         <div className={styles.titleBox}>
           <h2 className={styles.titleText}>
