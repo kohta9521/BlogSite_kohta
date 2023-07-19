@@ -19,7 +19,7 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ id, date, imgUrl, title, tags, auther }) => {
   return (
     <div className={styles.blogCardBox} key={id}>
-      <div className={styles.imgBox}>
+      <div className={styles.leftBox}>
 {/* date componets and blogImg componet */}
         <div className={styles.dateBox}>
           <p className={styles.dateText}>
