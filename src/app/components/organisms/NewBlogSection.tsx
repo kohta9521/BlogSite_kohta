@@ -18,41 +18,43 @@ type NewBlogContent = {
   id: number;
   date: string;
   imgUrl: string;
-  titleText: string;
-  explainText: string;
-  tag:string;
+  title: string;
+  // ぶっちゃけここを配列にしたい
+  tags: string;
+  auther: string;
 }
 
 const NewBlogSection: React.FC = () => {
 
-// ブログ内容を格納する配列
-// 後々map関数で全てを出力
-  const newBlogContent: NewBlogContent[] = [
+  const BlogContents: NewBlogContent[] = [
     {
       id: 1,
-      date: "2021-07-17",
-      imgUrl: "https://placehold.jp/150x150.png",
-      titleText: "ブログタイトル",
-      explainText: "ブログの説明文",
-      tag: "ブログタグ"
+      date: "2021/01/01",
+      imgUrl: "",
+      title: "test",
+      tags: "test",
+      auther: "kohta",
     },
   ]
+
 
   return (
     <div className={styles.newBlogBox}>
       <Title id={1} text="最新記事" link="#blog" size="medium"  />
       {
-        newBlogContent.map((item, i) => (
-          // ここにブログカードを格納、もしくはそれ配下の子コンポーネントを直接記述
-          // 製作中
-          <div className={styles.blogCard}>
-            {item.titleText}
-          </div>
-        ))
+        BlogContents.map((item, i) => {
+          return (
+            <BlogCard
+              id={item.id}
+              date={item.date}
+              imgUrl={item.imgUrl}
+              title={item.title}
+              tags={item.tags}
+              auther={item.auther}
+            />
+          )
+        })
       }
-      <BlogCard />
-      <BlogCard />
-      <BlogCard />
     </div>
   )
 }
