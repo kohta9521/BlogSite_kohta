@@ -1,16 +1,13 @@
-import Logo from "../atoms/Logo";
 import React, { FC } from "react";
 
 // css import
-import styles from "./Header.module.css";
-import ListArea from "../molecules/ListArea";
+import styles from "./styles/Header.module.css";
 
 
 const Header: React.FC = () => {
   return (
     <div className={styles.header}>
-      <Logo size="large" link="/pages/blog" />
-      <ListArea />
+      header
     </div>
   )
 }

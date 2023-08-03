@@ -1,0 +1,25 @@
+.main {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: red;
+}
+
+/* タブレット */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 98%;
+    background-color: blue;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 98%;
+    background-color: green;
+  }
+}

@@ -1,25 +1,17 @@
 import React, { FC } from "react";
 
 // css import
-import styles from "./MainLayout.module.css";
+import styles from "./styles/Mainlayout.module.css";
 import Header from "../organisms/Header";
-import Footer from "../organisms/Footer";
-
-// interface type
-interface MainLayoutProps {
-  children: React.ReactNode;
-}
 
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC = () => {
   return (
-    <>
-      <Header />
-        <main className={styles.mainLayoutContent}>
-          { children }
-        </main>
-      <Footer />
-    </>
+    <div className={styles.main}>
+      <div className={styles.container}>
+        <Header />
+      </div>
+    </div>
   )
 }
 
