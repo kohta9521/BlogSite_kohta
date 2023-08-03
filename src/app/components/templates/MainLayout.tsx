@@ -6,9 +6,11 @@ import styles from "./styles/Mainlayout.module.css";
 
 const MainLayout: React.FC = () => {
   return (
-    <>
-    <p>main layout</p>
-    </>
+    <div className={styles.main}>
+      <div className={styles.container}>
+        main
+      </div>
+    </div>
   )
 }
 
