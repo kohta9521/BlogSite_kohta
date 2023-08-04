@@ -29,6 +29,9 @@ const TopBlogCard: React.FC<Props> = ({ id, imgUrl, title, date, text }) => {
         <p className={styles.text}>
           {text}
         </p>
+        <div className={styles.tagsBox}>
+          tags
+        </div>
       </div>
     </div>
   )

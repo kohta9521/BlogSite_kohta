@@ -4,6 +4,7 @@
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  background-color: black;
 }
 .imgBox {
   max-width: 792px;
@@ -13,6 +14,36 @@
 }
 .textBox {
   width: 400px;
+  padding-top: 30px;
+}
+.title {
+  width: 98%;
+  height: 100px;
+  line-height: 40px;
+  font-size: 30px;
+  color: white;
+}
+.date {
+  display: block;
+  width: 95%;
+  height: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+}
+.text {
+  width: 98%;
+  margin: 4px auto;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: white;
+}
+.tagsBox {
+  width: 98%;
+  margin: 0 auto;
+  color: white;
 }
 
 /* タブレット */
@@ -22,7 +53,6 @@
 /* スマートフォン */
 @media screen and (max-width: 768px) {
   .topCard {
-    height: 630px;
     display: block;
   }
   .imgBox {
@@ -30,5 +60,10 @@
   }
   .textBox {
     width: 100%;
+    margin-top: 0px;
+  }
+  .title {
+    line-height: 30px;
+    font-size: 25px;
   }
 }
