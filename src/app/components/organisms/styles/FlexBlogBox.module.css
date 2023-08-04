@@ -1,0 +1,7 @@
+.flexBox {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}

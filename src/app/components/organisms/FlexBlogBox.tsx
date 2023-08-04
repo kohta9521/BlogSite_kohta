@@ -10,7 +10,21 @@ const FlexBlogBox: React.FC = () => {
     <div className={styles.flexBox}>
       <BlogCard
         id={1}
-        imgUrl="/img/sample.png"
+        imgUrl="/img/sampleImg.png"
+        madeDay="2023/08/04"
+        reEditDay="2023/08/04"
+        title="TypeScript環境でReact Hook Formのフォーム作成の基礎を学ぶ"
+      />
+      <BlogCard
+        id={1}
+        imgUrl="/img/sampleImg.png"
+        madeDay="2023/08/04"
+        reEditDay="2023/08/04"
+        title="TypeScript環境でReact Hook Formのフォーム作成の基礎を学ぶ"
+      />
+      <BlogCard
+        id={1}
+        imgUrl="/img/sampleImg.png"
         madeDay="2023/08/04"
         reEditDay="2023/08/04"
         title="TypeScript環境でReact Hook Formのフォーム作成の基礎を学ぶ"

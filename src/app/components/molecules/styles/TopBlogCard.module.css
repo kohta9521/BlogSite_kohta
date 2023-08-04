@@ -1,6 +1,7 @@
 .topCard {
   width: 100%;
   height: 450px;
+  margin-bottom: 20px;
 }
 .blogLink {
   text-decoration: none;
