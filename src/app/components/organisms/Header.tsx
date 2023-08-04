@@ -16,13 +16,13 @@ const Header: React.FC = () => {
 
   return (
     <div className={styles.header}>
-      <ToggleButton
+      {/* <ToggleButton
         open={open}
         controls="navigation"
         label="メニューを開きます"
         onClick={toggleFunction}
       />
-      <Navigation id="navigation" open={open} />
+      <Navigation id="navigation" open={open} /> */}
     </div>
   )
 }

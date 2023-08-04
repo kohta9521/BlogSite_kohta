@@ -1,5 +1,6 @@
 .line-1 {
   transform: translate(0, -10px);
+  background-color: gray;
 }
 
 .line-2 {
