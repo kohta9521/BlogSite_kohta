@@ -6,11 +6,29 @@
   justify-content: space-between;
 }
 .imgBox {
-  width: 792px;
+  max-width: 792px;
 }
 .img {
   width: 100%;
 }
 .textBox {
   width: 400px;
+}
+
+/* タブレット */
+@media screen and (max-width: 1280px) {
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+  .topCard {
+    height: 630px;
+    display: block;
+  }
+  .imgBox {
+    width: 100%;
+  }
+  .textBox {
+    width: 100%;
+  }
 }
