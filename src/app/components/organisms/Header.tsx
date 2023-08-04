@@ -3,8 +3,9 @@ import React, { FC, useState } from "react";
 
 // css import
 import styles from "./styles/Header.module.css";
-import ToggleButton from "../atoms/ToggleButton";
-import Navigation from "../atoms/Navigation";
+// import ToggleButton from "../atoms/ToggleButton";
+// import Navigation from "../atoms/Navigation";
+import Logo from "../atoms/LogoItem";
 
 
 const Header: React.FC = () => {
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <div className={styles.header}>
+      <Logo id={1} size="medium" />
       {/* <ToggleButton
         open={open}
         controls="navigation"

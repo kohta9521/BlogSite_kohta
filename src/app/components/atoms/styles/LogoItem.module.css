@@ -1,0 +1,17 @@
+.logo {
+  height: 100%;
+}
+.img {
+  width: 100%;
+}
+
+/* props  */
+.small {
+  width: 100px;
+}
+.medium {
+  width: 200px;
+}
+.large {
+  width: 300px;
+}
