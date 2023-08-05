@@ -1,3 +1,24 @@
+.datebox {
+  display: flex;
+  justify-content: flex-start;
+  background-color: red;
+}
+
 .icon {
+  height: 100%;
+  display: block;
   color: whtie;
+}
+.date {
+}
+
+/* props css */
+.small {
+  width: 130px;
+}
+.medium {
+  width: 150px;
+}
+.large {
+  width: 150px;
 }
