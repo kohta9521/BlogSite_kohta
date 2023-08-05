@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 // css import
 import styles from "./styles/TopBlogCard.module.css";
+import ArticleDate from "../atoms/ArticleDate";
 
 // props type
 type Props = {
@@ -25,9 +26,12 @@ const TopBlogCard: React.FC<Props> = ({ id, blogLink, imgUrl, title, date, text 
           <h2 className={styles.title}>
             {title}
           </h2>
-          <p className={styles.date}>
-            {date}
-          </p>
+          <ArticleDate
+            id={1}
+            imgBool={false}
+            date="2023/08/04"
+            size="large"
+          />
           <p className={styles.text}>
             {text}
           </p>
