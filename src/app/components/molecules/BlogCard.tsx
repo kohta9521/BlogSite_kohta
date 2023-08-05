@@ -3,6 +3,7 @@ import React, { FC } from "react";
 // css import
 import styles from "./styles/BlogCard.module.css";
 import { StringLiteral } from "typescript";
+import ArticleDate from "../atoms/ArticleDate";
 
 // props type
 type Props = {
@@ -23,8 +24,18 @@ const BlogCard: React.FC<Props> = ({ id, imgUrl, madeDay, reEditDay, title }) =>
       </div>
       <div className={styles.textBox}>
         <div className={styles.dateBox}>
-          <p className={styles.date1}>2023/08/04</p>
-          <p className={styles.date1}>2023/08/04</p>
+          <ArticleDate
+            id={1}
+            imgBool={true}
+            date="2023/08/05"
+            size="small"
+          />
+          <ArticleDate
+            id={2}
+            imgBool={false}
+            date="2023/08/05"
+            size="small"
+          />
         </div>
         <h2 className={styles.blogTitle}>
           {title}
