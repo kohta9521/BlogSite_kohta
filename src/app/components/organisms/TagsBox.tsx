@@ -4,6 +4,7 @@ import React, { FC } from "react";
 // css import
 import styles from "./styles/TagsBox.module.css";
 import Tags from "../atoms/CategoryTag";
+import CategoryTag from "../atoms/CategoryTag";
 
 // props type
 type Props = {
@@ -22,7 +23,7 @@ const TagsBox: React.FC<Props> = ({ id, title }) => {
           </h3>
         </div>
         <div className={styles.flex}>
-          <Tags id={1} tagsNumber={[1]} />
+          <CategoryTag id={1} tagsNumber={[1]} />
         </div>
       </div>
     </div>
