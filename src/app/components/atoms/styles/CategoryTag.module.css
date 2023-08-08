@@ -3,6 +3,8 @@
   width: 180px;
   height: 40px;
   line-height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
   text-align: center;
   background-color: white;
   text-decoration: none;
