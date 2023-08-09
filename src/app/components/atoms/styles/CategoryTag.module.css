@@ -1,11 +1,24 @@
 .tags {
   display: block;
+  display: flex;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
   width: 180px;
   height: 40px;
   line-height: 40px;
-  border-radius: 20px;
-  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
   text-align: center;
   background-color: white;
   text-decoration: none;
+  background-color: #1f2937;
+}
+.tags:hover {
+  background-color: #353e4b;
+}
+.img {
+  width: 40px;
+  height: 40px;
 }
