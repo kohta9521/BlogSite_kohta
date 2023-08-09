@@ -17,8 +17,7 @@ type Array = {
   id: number;
   iconUrl: string;
   text: string;
-  // このURLはタグの集積場所につながるパスを後々指定
-  url: string;
+  imgUrl: string;
 }
 
 
@@ -30,18 +29,19 @@ const CategoryTag: React.FC<Props> = ({ id, tagsNumber }) => {
       id: 1,
       iconUrl: "/pages/category/react",
       text: "React",
-      url: "",
+      imgUrl: "/icons/category/reactnative.svg",
     },
     {
       id: 2,
       iconUrl: "/pages/category/nextjs",
       text: "Next.js",
-      url: "",
+      imgUrl: "",
     },
   ]
 
   return (
     <a className={styles.tags} href={ListTags[0].iconUrl}>
+      <img className={styles.img} src={ListTags[0].imgUrl} alt="iconImg" />
       {ListTags[0].text}
     </a>
   )
