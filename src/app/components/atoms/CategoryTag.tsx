@@ -2,6 +2,7 @@ import React, { FC } from "react";
 
 // css import
 import styles from "./styles/CategoryTag.module.css";
+import { List } from "@chakra-ui/react";
 
 // props type
 type Props = {
@@ -22,28 +23,28 @@ type Array = {
 
 
 
-const Tags: React.FC<Props> = ({ id, tagsNumber }) => {
+const CategoryTag: React.FC<Props> = ({ id, tagsNumber }) => {
   // tagの内容をこのコンポーネントの中に配列として保持
   const ListTags: Array[] = [
     {
       id: 1,
-      iconUrl: "",
+      iconUrl: "/pages/category/react",
       text: "React",
       url: "",
     },
     {
       id: 2,
-      iconUrl: "",
+      iconUrl: "/pages/category/nextjs",
       text: "Next.js",
       url: "",
     },
   ]
 
   return (
-    <div className={styles.tags}>
-      tags
-    </div>
+    <a className={styles.tags} href={ListTags[0].iconUrl}>
+      {ListTags[0].text}
+    </a>
   )
 }
 
-export default Tags;
+export default CategoryTag;

@@ -4,6 +4,7 @@ import React, { FC } from "react";
 import styles from "./styles/MainContent.module.css";
 import TopBlogCard from "../molecules/TopBlogCard";
 import FlexBlogBox from "./FlexBlogBox";
+import TagsBox from "./TagsBox";
 
 
 const MainContent: React.FC = () => {
@@ -21,6 +22,8 @@ const MainContent: React.FC = () => {
       <FlexBlogBox />
       <FlexBlogBox />
       <FlexBlogBox />
+      <TagsBox id={1} title="カテゴリー一覧" />
+      <TagsBox id={2} title="投稿日一覧" />
     </div>
   )
 }

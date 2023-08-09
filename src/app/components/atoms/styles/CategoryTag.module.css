@@ -1,0 +1,9 @@
+.tags {
+  display: block;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+}
