@@ -1,0 +1,15 @@
+.box {
+  width: 80%;
+  height: 500px;
+}
+.container {
+  width: 100%;
+}
+
+/* タブレット */
+@media screen and (max-width: 1280px) {
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+}
