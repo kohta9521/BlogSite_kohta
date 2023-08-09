@@ -5,14 +5,20 @@ import React, { FC } from "react";
 import styles from "./styles/TagsBox.module.css";
 import Tags from "../atoms/CategoryTag";
 
+// props type
+type Props = {
+  id: number;
+  title: string;
+}
 
-const TagsBox: React.FC = () => {
+
+const TagsBox: React.FC<Props> = ({ id, title }) => {
   return (
-    <div className={styles.box}>
+    <div className={styles.box} key={id}>
       <div className={styles.container}>
         <div className={styles.titleArea}>
           <h3 className={styles.title}>
-            タグ一覧
+            {title}
           </h3>
         </div>
         <div className={styles.flex}>

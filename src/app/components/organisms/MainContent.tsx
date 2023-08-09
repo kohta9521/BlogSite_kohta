@@ -22,7 +22,8 @@ const MainContent: React.FC = () => {
       <FlexBlogBox />
       <FlexBlogBox />
       <FlexBlogBox />
-      <TagsBox />
+      <TagsBox id={1} title="カテゴリー一覧" />
+      <TagsBox id={2} title="投稿日一覧" />
     </div>
   )
 }
