@@ -23,7 +23,8 @@ const TagsBox: React.FC<Props> = ({ id, title }) => {
           </h3>
         </div>
         <div className={styles.flex}>
-          <CategoryTag id={1} tagsNumber={[1]} />
+          <CategoryTag id={1} tagsNumber={0} />
+          <CategoryTag id={1} tagsNumber={1} />
         </div>
       </div>
     </div>
