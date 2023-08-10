@@ -5,6 +5,7 @@ import React, { FC } from "react";
 import styles from "./styles/Mainlayout.module.css";
 import Header from "../organisms/Header";
 import MainContent from "../organisms/MainContent";
+import Footer from "../organisms/Footer";
 
 
 const MainLayout: React.FC = () => {
@@ -14,6 +15,7 @@ const MainLayout: React.FC = () => {
       <div className={styles.container}>
         <MainContent />
       </div>
+      <Footer />
     </div>
   )
 }
