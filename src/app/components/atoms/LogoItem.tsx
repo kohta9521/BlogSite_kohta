@@ -14,7 +14,9 @@ type Props = {
 const Logo: React.FC<Props> = ({ id, size = "medium" }) => {
   return (
     <div className={`styles.logo ${styles[size]}`} key={id}>
-      <img className={styles.img} src="/img/logo.png" alt="site logo img" />
+      <a href="/">
+        <img className={styles.img} src="/img/logo.png" alt="site logo img" />
+      </a>
     </div>
   )
 }

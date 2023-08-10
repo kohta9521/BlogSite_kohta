@@ -3,6 +3,7 @@
 }
 .container {
   width: 70%;
+  min-height: 2000px;
   margin: 0 auto;
   color: white;
 }
