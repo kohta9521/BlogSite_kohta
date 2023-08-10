@@ -7,6 +7,7 @@ import FlexBlogBox from "./FlexBlogBox";
 import TagsBox from "./TagsBox";
 
 
+
 const MainContent: React.FC = () => {
   return (
     <div className={styles.main}>

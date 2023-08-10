@@ -18,6 +18,7 @@ const FlexBlogBox: React.FC = () => {
           madeDay="2023/08/04"
           reEditDay="2023/08/04"
           title="TypeScrip React とStorybookを触ってみた"
+          tags={12}
         />
         <BlogCard
           id={1}
@@ -25,6 +26,7 @@ const FlexBlogBox: React.FC = () => {
           madeDay="2023/08/04"
           reEditDay="2023/08/04"
           title="NuxtとVueでの初期設定について"
+          tags={0}
         />
         <BlogCard
           id={1}
@@ -32,6 +34,7 @@ const FlexBlogBox: React.FC = () => {
           madeDay="2023/08/04"
           reEditDay="2023/08/04"
           title="JsのFetch勉強し直し"
+          tags={7}
         />
       </div>    
     </>
