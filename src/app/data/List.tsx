@@ -62,13 +62,13 @@ export const tags = [
   },
   {
     id: "11",
-    url: "/pages/category/Prisma",
+    url: "/pages/category/prisma",
     text: "Prisma",
     img: "/icons/category/prisma.svg",
   },
   {
     id: "12",
-    url: "/pages/category/ReactNative",
+    url: "/pages/category/reactnative",
     text: "React Native",
     img: "/icons/category/ReactNative.svg",
   },

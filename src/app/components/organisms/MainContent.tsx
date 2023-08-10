@@ -14,13 +14,14 @@ const MainContent: React.FC = () => {
       {/* propsでtagの表示内容を複数取得 */}
       <TopBlogCard 
         id={1}
-        blogLink="/pages/blog"
+        blogLink="/pages/blog/reacttypescripthookstable"
         imgUrl={"/img/sampleImg.png"}
         title="TypeScriptでReact Hook Formのフォーム作成の基礎を学ぶ"
         date="2023年7月24日 更新"
         text="アプリケーションを構築する際にページネーションや列の並び替えの機能を持ったライブラリを利用したいけどデザインは自分達で行いたいなと思った経験はないですか？そんな人のためのライブラリが TanStack Table です。TanStack Table は Headless UI なのでテーブルに必要な基本機能を備えながらデザインは各自で行うことができます。"
       />
       <FlexBlogBox />
+      <TagsBox id={0} title="カテゴリー一覧" />
     </div>
   )
 }
