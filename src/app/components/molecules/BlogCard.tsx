@@ -3,6 +3,7 @@ import React, { FC } from "react";
 // css import
 import styles from "./styles/BlogCard.module.css";
 import ArticleDate from "../atoms/ArticleDate";
+import CategoryTag from "../atoms/CategoryTag";
 
 // props type
 type Props = {
@@ -11,11 +12,14 @@ type Props = {
   madeDay: string;
   reEditDay: string;
   title: string;
-  // tags: number[];
+  tags: number;
 }
 
 
-const BlogCard: React.FC<Props> = ({ id, imgUrl, madeDay, reEditDay, title }) => {
+const BlogCard: React.FC<Props> = ({ id, imgUrl, madeDay, reEditDay, title, tags }) => {
+  // tagのコンポーネントに渡すdateとの紐付け用の数値
+  const i: number = tags;
+
   return (
     <div className={styles.blogCard} key={id}>
       <div className={styles.imgBox}>
@@ -40,7 +44,7 @@ const BlogCard: React.FC<Props> = ({ id, imgUrl, madeDay, reEditDay, title }) =>
           {title}
         </h2>
         <div className={styles.tagBox}>
-          tags
+          <CategoryTag id={0} tagsNumber={i} />
         </div>
       </div>
     </div>
