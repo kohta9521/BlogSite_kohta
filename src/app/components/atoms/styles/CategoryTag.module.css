@@ -2,12 +2,13 @@
   display: block;
   display: flex;
   padding: 0 10px 0 10px;
+  margin-right: 10px;
   box-sizing: border-box;
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   line-height: 40px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   text-align: center;
