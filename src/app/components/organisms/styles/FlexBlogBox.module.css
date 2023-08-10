@@ -4,3 +4,24 @@
   display: flex;
   justify-content: space-between;
 }
+.title {
+  displa: block;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* タブレット */
+@media screen and (max-width: 1280px) {
+  .flexBox {
+    display: block;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 768px) {
+  .flexBox {
+    display: block;
+  }
+}
