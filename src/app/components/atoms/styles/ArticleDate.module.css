@@ -28,3 +28,13 @@
 .large {
   width: 150px;
 }
+
+@media screen and (max-width: 768px) {
+  .date {
+    font-size: 12px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

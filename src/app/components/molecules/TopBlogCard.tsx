@@ -3,6 +3,7 @@ import React, { FC } from "react";
 // css import
 import styles from "./styles/TopBlogCard.module.css";
 import ArticleDate from "../atoms/ArticleDate";
+import CategoryTag from "../atoms/CategoryTag";
 
 // props type
 type Props = {
@@ -36,7 +37,7 @@ const TopBlogCard: React.FC<Props> = ({ id, blogLink, imgUrl, title, date, text 
             {text}
           </p>
           <div className={styles.tagsBox}>
-            tags
+            <CategoryTag id={0} tagsNumber={0} />
           </div>
         </div>
       </a>
