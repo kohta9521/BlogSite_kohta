@@ -19,10 +19,9 @@
   width: 100%;
 }
 .flexBox {
-  width: 130%;
+  width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-around;
 }
 
 /* タブレット */

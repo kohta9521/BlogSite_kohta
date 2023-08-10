@@ -175,3 +175,13 @@ export const tags = [
     img: "",
   },
 ]
+
+
+
+// 日付一覧
+export const dateCategory = [
+  {
+    id: "1",
+    text: "2023/08/10",
+  }
+]
