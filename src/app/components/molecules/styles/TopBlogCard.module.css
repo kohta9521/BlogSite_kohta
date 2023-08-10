@@ -13,17 +13,16 @@
   background-color: black;
 }
 .blogLink:hover {
-  border: 0.1px solid gray;
+  background-color: #191919;
 }
 .imgBox {
   max-width: 792px;
 }
 .img {
-  width: 100%;
+  width: 98%;
 }
 .textBox {
   width: 390px;
-  padding-top: 30px;
 }
 .title {
   width: 98%;
@@ -44,7 +43,8 @@
 .text {
   width: 98%;
   margin: 4px auto;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   font-size: 15px;
   color: white;
 }
@@ -52,6 +52,7 @@
   width: 98%;
   margin: 0 auto;
   color: white;
+  display: flex;
 }
 
 /* タブレット */

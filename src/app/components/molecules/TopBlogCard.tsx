@@ -38,6 +38,7 @@ const TopBlogCard: React.FC<Props> = ({ id, blogLink, imgUrl, title, date, text 
           </p>
           <div className={styles.tagsBox}>
             <CategoryTag id={0} tagsNumber={0} />
+            <CategoryTag id={0} tagsNumber={15} />
           </div>
         </div>
       </a>
