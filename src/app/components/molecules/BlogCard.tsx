@@ -2,7 +2,6 @@ import React, { FC } from "react";
 
 // css import
 import styles from "./styles/BlogCard.module.css";
-import { StringLiteral } from "typescript";
 import ArticleDate from "../atoms/ArticleDate";
 
 // props type
