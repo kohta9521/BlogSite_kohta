@@ -3,7 +3,7 @@
   display: flex;
   padding: 0 10px 0 10px;
   box-sizing: border-box;
-  width: 180px;
+  width: 160px;
   height: 40px;
   line-height: 40px;
   border-radius: 10px;
@@ -21,4 +21,17 @@
 .img {
   width: 40px;
   height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .tags {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .img {
+    width: 30px;
+    height: 30px;
+  }
 }
