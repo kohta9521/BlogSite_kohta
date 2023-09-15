@@ -12,6 +12,6 @@
   background-color: white;
 }
 
-.navigation[aria-hidden="false"] {
+.navigation[aria-hidden='false'] {
   display: flex;
 }

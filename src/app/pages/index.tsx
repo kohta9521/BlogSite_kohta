@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import MainLayout from "../components/templates/MainLayout";
+import React, { FC } from 'react'
+import MainLayout from '../components/templates/MainLayout'
 
 const Page: React.FC = () => {
   return (
@@ -9,4 +9,4 @@ const Page: React.FC = () => {
   )
 }
 
-export default Page;
+export default Page

@@ -1,25 +1,21 @@
-import React, { FC } from "react";
-
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/TagsBox.module.css";
-import CategoryTag from "../atoms/CategoryTag";
+import styles from './styles/TagsBox.module.css'
+import CategoryTag from '../atoms/CategoryTag'
 
 // props type
 type Props = {
-  id: number;
-  title: string;
+  id: number
+  title: string
 }
-
 
 const TagsBox: React.FC<Props> = ({ id, title }) => {
   return (
     <div className={styles.box} key={id}>
       <div className={styles.container}>
         <div className={styles.titleArea}>
-          <h3 className={styles.title}>
-            {title}
-          </h3>
+          <h3 className={styles.title}>{title}</h3>
         </div>
         <div className={styles.flex}>
           <div className={styles.flexBox}>
@@ -55,5 +51,4 @@ const TagsBox: React.FC<Props> = ({ id, title }) => {
   )
 }
 
-
-export default TagsBox;
+export default TagsBox

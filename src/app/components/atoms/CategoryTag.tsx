@@ -1,25 +1,21 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/CategoryTag.module.css";
-
+import styles from './styles/CategoryTag.module.css'
 
 // props type
 type Props = {
-  id: number;
-  tagsNumber: number;
+  id: number
+  tagsNumber: number
 }
 
 // dataset
-import { tags } from "../../data/List";
+import { tags } from '../../data/List'
 
 // なんの配列を表示するか複数の値を取得して表示
 
-
-
 const CategoryTag: React.FC<Props> = ({ id, tagsNumber }) => {
-
-  const i: number = tagsNumber;
+  const i: number = tagsNumber
 
   return (
     <a className={styles.tags} href={tags[i].url}>
@@ -29,4 +25,4 @@ const CategoryTag: React.FC<Props> = ({ id, tagsNumber }) => {
   )
 }
 
-export default CategoryTag;
+export default CategoryTag

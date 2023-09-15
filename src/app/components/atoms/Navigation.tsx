@@ -1,18 +1,16 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/Navigation.module.css";
-
+import styles from './styles/Navigation.module.css'
 
 type Props = {
-  open: boolean;
-  id: string;
-};
-
+  open: boolean
+  id: string
+}
 
 const Navigation: React.FC<Props> = ({ open, id }) => {
   return (
-    <nav id={id} aria-hidden={!open} className={styles.navigation} >
+    <nav id={id} aria-hidden={!open} className={styles.navigation}>
       <ul>
         <li>about</li>
         <li>about</li>
@@ -22,4 +20,4 @@ const Navigation: React.FC<Props> = ({ open, id }) => {
   )
 }
 
-export default Navigation;
+export default Navigation
