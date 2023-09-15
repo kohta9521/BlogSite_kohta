@@ -1,17 +1,16 @@
-import React, { FC, MouseEventHandler } from "react";
+import React, { FC, MouseEventHandler } from 'react'
 
 // css import
-import styles from "./styles/ToggleButton .module.css";
+import styles from './styles/ToggleButton .module.css'
 
 type Props = {
-  open: boolean;
-  onClick: MouseEventHandler;
-  controls: string;
-  label: string;
+  open: boolean
+  onClick: MouseEventHandler
+  controls: string
+  label: string
 }
 
-
-const ToggleButton: React.FC<Props> = ({ open, controls, label, onClick}) => {
+const ToggleButton: React.FC<Props> = ({ open, controls, label, onClick }) => {
   return (
     <button
       type="button"
@@ -27,4 +26,4 @@ const ToggleButton: React.FC<Props> = ({ open, controls, label, onClick}) => {
   )
 }
 
-export default ToggleButton;
+export default ToggleButton

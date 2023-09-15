@@ -1,16 +1,13 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/FlexBlogBox.module.css";
-import BlogCard from "../molecules/BlogCard";
-
+import styles from './styles/FlexBlogBox.module.css'
+import BlogCard from '../molecules/BlogCard'
 
 const FlexBlogBox: React.FC = () => {
   return (
     <>
-          <h1 className={styles.title}>
-        おすすめ記事
-      </h1>
+      <h1 className={styles.title}>おすすめ記事</h1>
       <div className={styles.flexBox}>
         <BlogCard
           id={1}
@@ -36,10 +33,9 @@ const FlexBlogBox: React.FC = () => {
           title="JsのFetch勉強し直し"
           tags={7}
         />
-      </div>    
+      </div>
     </>
-
   )
 }
 
-export default FlexBlogBox;
+export default FlexBlogBox

@@ -1,17 +1,16 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/LogoItem.module.css";
-import { Divider } from "@chakra-ui/react";
+import styles from './styles/LogoItem.module.css'
+import { Divider } from '@chakra-ui/react'
 
 // ロゴのサイズ指定用Props
 type Props = {
-  id: number;
-  size?: 'small' | 'medium' | 'large';
+  id: number
+  size?: 'small' | 'medium' | 'large'
 }
 
-
-const Logo: React.FC<Props> = ({ id, size = "medium" }) => {
+const Logo: React.FC<Props> = ({ id, size = 'medium' }) => {
   return (
     <div className={`styles.logo ${styles[size]}`} key={id}>
       <a href="/">
@@ -21,4 +20,4 @@ const Logo: React.FC<Props> = ({ id, size = "medium" }) => {
   )
 }
 
-export default Logo;
+export default Logo

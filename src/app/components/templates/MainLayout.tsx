@@ -1,12 +1,11 @@
-'use client';
-import React, { FC } from "react";
+'use client'
+import React, { FC } from 'react'
 
 // css import
-import styles from "./styles/Mainlayout.module.css";
-import Header from "../organisms/Header";
-import MainContent from "../organisms/MainContent";
-import Footer from "../organisms/Footer";
-
+import styles from './styles/Mainlayout.module.css'
+import Header from '../organisms/Header'
+import MainContent from '../organisms/MainContent'
+import Footer from '../organisms/Footer'
 
 const MainLayout: React.FC = () => {
   return (
@@ -20,4 +19,4 @@ const MainLayout: React.FC = () => {
   )
 }
 
-export default MainLayout;
+export default MainLayout

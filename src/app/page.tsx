@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import styles from '../styles/page.module.css'
 import Page from './pages'
 
