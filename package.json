@@ -6,13 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
-    "lint": "next lint",
-    "format": "prettier --check ./src",
-    "format:fix": "prettier --write ./src",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
-=======
     "lint": "eslint ./src",
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src",
@@ -30,32 +23,11 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
->>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
   },
   "dependencies": {
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
-<<<<<<< HEAD
-    "autoprefixer": "10.4.16",
-    "eslint-config-next": "13.5.2",
-    "next": "13.5.2",
-    "postcss": "8.4.30",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.49.0",
-    "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.0.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog-ja"
-    }
-=======
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
     "react": "18.2.0",
@@ -68,6 +40,5 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3"
->>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
   }
 }
