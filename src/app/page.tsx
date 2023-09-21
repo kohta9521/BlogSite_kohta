@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 import Image from 'next/image'
+=======
+'use client'
+import styles from '../styles/page.module.css'
+import Page from './pages'
+>>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
 
 export default function Home() {
   return (

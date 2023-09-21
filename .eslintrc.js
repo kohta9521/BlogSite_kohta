@@ -5,6 +5,10 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
+<<<<<<< HEAD
+=======
+        "plugin:@typescript-eslint/recommended",
+>>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
         "plugin:react/recommended"
     ],
     "overrides": [
@@ -20,11 +24,19 @@ module.exports = {
             }
         }
     ],
+<<<<<<< HEAD
+=======
+    "parser": "@typescript-eslint/parser",
+>>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
+<<<<<<< HEAD
+=======
+        "@typescript-eslint",
+>>>>>>> 78f8f8a4863a68e25fcccc011a4b61208e8aa7ad
         "react"
     ],
     "rules": {
