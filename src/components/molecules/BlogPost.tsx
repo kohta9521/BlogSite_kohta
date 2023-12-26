@@ -11,7 +11,7 @@ interface BlogPostProps {
 interface BlogPostData {
   id?: string;
   title: string;
-  date?: Timestamp; // FirestoreのTimestamp型
+  date?: Date; // Date型に変更
   content: string;
 }
 
@@ -27,13 +27,12 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-          const postData = docSnap.data() as BlogPostData;
-          // Firestore TimestampをJavaScriptのDateに変換
-          const date = postData.date ? postData.date.toDate() : undefined;
+          const data = docSnap.data();
           setPost({
-            ...postData,
+            ...data,
             id: docSnap.id,
-            date, // 変換されたDateオブジェクト
+            // Firestore TimestampをDateオブジェクトに変換
+            date: data.date ? (data.date as Timestamp).toDate() : undefined,
           });
         } else {
           setError(new Error('Document does not exist'));
@@ -57,7 +56,6 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
   return (
     <div>
       <h1>{post.title}</h1>
-      {/* Dateオブジェクトを使用して日付を表示 */}
       <h2>{post.date ? post.date.toDateString() : 'No date'}</h2>
       <p>{post.content}</p>
     </div>
