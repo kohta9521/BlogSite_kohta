@@ -1,6 +1,12 @@
+import React from 'react';
+import BlogPost from '../components/molecules/BlogPost';
 
 export default function Home() {
+
   return (
-    <h1>hello</h1>
+    <div>
+      <BlogPost postId="hNSlTwwb0YBFJ1REvZnm" />
+      <BlogPost postId="MPs2HlCIhSnye0W1Pjke" />
+    </div>
   )
 }
