@@ -1,7 +1,7 @@
 'use client';
 // components/BlogPost.tsx
 import React, { useEffect, useState } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
+import { Timestamp, doc, getDoc } from 'firebase/firestore';
 import { db } from '../../utils/firebase';
 
 interface BlogPostProps {
@@ -11,6 +11,7 @@ interface BlogPostProps {
 interface BlogPostData {
   id?: string;
   title: string;
+  date?: Timestamp; // FirestoreのTimestamp型
   content: string;
 }
 
@@ -26,7 +27,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-          setPost({ id: docSnap.id, ...docSnap.data() as BlogPostData });
+          const postData = docSnap.data() as BlogPostData;
+          // Firestore TimestampをJavaScriptのDateに変換
+          const date = postData.date ? postData.date.toDate() : undefined;
+          setPost({
+            ...postData,
+            id: docSnap.id,
+            date, // 変換されたDateオブジェクト
+          });
         } else {
           setError(new Error('Document does not exist'));
         }
@@ -49,6 +57,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
   return (
     <div>
       <h1>{post.title}</h1>
+      {/* Dateオブジェクトを使用して日付を表示 */}
+      <h2>{post.date ? post.date.toDateString() : 'No date'}</h2>
       <p>{post.content}</p>
     </div>
   );
