@@ -1,39 +1,36 @@
-# Kohta Engineer Blog Site
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-このサイトではKOhtaのエンジニア関連の記事をご覧いただくことができます。
-新しい技術の実装方法からおすすめのガジェット・業務効率化のための施行方法など日々記事を更新いたしますのでお楽しみください。
+## Getting Started
 
+First, run the development server:
 
-## Demo
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## How to use
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Requirement
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-* Nextjs  13.4.19
-* React  18.2.0
-* TypeScript  5.2.2
-* ESlint  8.49.0
-* Prittier  3.0.3
-* Husky  8.0.8
-* Jest  29.7.0
-* commitizen  4.3.0
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Note
+## Learn More
 
-I don't test environments under Linux and Mac.
+To learn more about Next.js, take a look at the following resources:
 
-## Author
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-* Kohta Kochi
-* GitHub Accounts : Kohta9521
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## パッチノート（更新履歴）
+## Deploy on Vercel
 
-##### Ver.0.1.0
-2023/09/21
-最初のバージョン登録
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## License
-
-このウェブサイトにおける文章、および画像については全てKohtaに帰属しているものとします。
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
