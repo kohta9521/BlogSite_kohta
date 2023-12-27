@@ -1,7 +1,7 @@
 'use client';
 // components/BlogPost.tsx
 import React, { useEffect, useState } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
+import { Timestamp, doc, getDoc } from 'firebase/firestore';
 import { db } from '../../utils/firebase';
 
 interface BlogPostProps {
@@ -11,6 +11,7 @@ interface BlogPostProps {
 interface BlogPostData {
   id?: string;
   title: string;
+  date?: string; // string型
   content: string;
 }
 
@@ -26,7 +27,18 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-          setPost({ id: docSnap.id, ...docSnap.data() as BlogPostData });
+          const data = docSnap.data() as BlogPostData;
+
+          let dateString = '';
+          if (data.date && typeof data.date === 'object' && 'toDate' in data.date) {
+            dateString = (data.date as Timestamp).toDate().toDateString();
+          }
+
+          setPost({
+            ...data,
+            id: docSnap.id,
+            date: dateString,
+          });
         } else {
           setError(new Error('Document does not exist'));
         }
@@ -49,6 +61,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
   return (
     <div>
       <h1>{post.title}</h1>
+      <h2>{post.date}</h2>
       <p>{post.content}</p>
     </div>
   );
