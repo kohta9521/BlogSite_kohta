@@ -1,12 +1,12 @@
 [
     {
         "id": "tag1",
-        "name": "タグ1",
+        "name": "プログラミング",
         "posts": ["post1", "post2"]
     },
     {
         "id": "tag2",
-        "name": "タグ2",
+        "name": "エンジニア",
         "posts": ["post2", "post3"]
     }
 ]
