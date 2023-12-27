@@ -1,9 +1,11 @@
 import React from 'react';
-import BlogPost from '../components/molecules/BlogPost';
+
+// components
 import Header from '@/components/organisms/Header';
 
 
 export default function Home() {
+  
 
   return (
     <div>
