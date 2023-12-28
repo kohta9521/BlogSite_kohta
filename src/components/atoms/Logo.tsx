@@ -19,13 +19,28 @@ const Logo = ({
     link,
     size = 'medium'
 }: LogoProps) => {
+    const imageSize = {
+        small: {
+            width: 200,
+            height: 45
+        },
+        medium: {
+            width: 300,
+            height: 65
+        },
+        large: {
+            width: 350,
+            height: 70
+        }
+    }[size];
+
     return (
         <Link className={`${styles.logoLink} ${styles[size]}`} href={link} key={id}>
             <Image
                 className={styles.logoImage}
                 src="/images/blog_logo_white.png"
-                width={300}
-                height={65}
+                width={imageSize.width}
+                height={imageSize.height}
                 alt="logo"
             />
         </Link>
