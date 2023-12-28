@@ -1,22 +1,24 @@
 import React from 'react'
-import BlogPost from '../molecules/BlogPost'
-import Logo from '../atoms/Logo'
 
 // scss
+import styles from "./styles/Header.module.scss"
 
 // components
-
+import Logo from '../atoms/Logo'
 
 const Header = () => {
 
     return (
-        <header>
+        <div className={styles.header}>
             {/* Logo */}
-            <div>
+            <div className={styles.logoBox}>
                 <Logo id={1} link='/' size='medium' />
             </div>
             {/* Menu */}
-        </header>
+            <div className={styles.menuBox}>
+
+            </div>
+        </div>
     )
 }
 
