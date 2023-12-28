@@ -11,8 +11,10 @@ interface BlogPostProps {
 interface BlogPostData {
   id?: string;
   title: string;
-  date?: string; // string型
+  date: string;
   content: string;
+  teg: string;
+  description: string;
 }
 
 const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
@@ -62,6 +64,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId }) => {
     <div>
       <h1>{post.title}</h1>
       <h2>{post.date}</h2>
+      <p>{post.content}</p>
+      <p>{post.description}</p>
       <p>{post.content}</p>
     </div>
   );
