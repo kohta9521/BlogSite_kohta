@@ -5,6 +5,7 @@ import styles from "./styles/Header.module.scss"
 
 // components
 import Logo from '../atoms/Logo'
+import List from '../atoms/List'
 
 const Header = () => {
 
@@ -16,7 +17,7 @@ const Header = () => {
             </div>
             {/* Menu */}
             <div className={styles.menuBox}>
-
+                <List id={1} link='/' text='list' size='medium' color='black' />
             </div>
         </div>
     )
