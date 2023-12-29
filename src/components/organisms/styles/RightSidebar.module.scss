@@ -3,3 +3,9 @@
     height: 3000px;
     background-color: rgb(7, 70, 70);
 }
+
+@media screen and (max-width: 1024px) {
+    .rightSideBar {
+        display: none;
+    }
+}
