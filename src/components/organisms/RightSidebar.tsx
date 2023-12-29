@@ -7,7 +7,7 @@ import styles from './styles/RightSidebar.module.scss'
 
 const RightSidebar = () => {
     return (
-        <div>
+        <div className={styles.rightSideBar}>
             RightSidebar
         </div>
     )
