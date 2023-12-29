@@ -1,5 +1,11 @@
 .leftSidebar {
     width: 250px;
     height: 100%;
-    background-color: aqua;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+    .leftSidebar {
+        width: 150px;
+    }
 }
