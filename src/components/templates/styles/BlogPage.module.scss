@@ -1,0 +1,16 @@
+.blogPage {
+    width: 100%;
+    background-color: aquamarine;
+    .container {
+        width: 1700px;
+        margin: 0 auto;
+        height: 3000px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blogPage {
+        display: none;
+    }
+}

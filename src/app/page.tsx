@@ -2,15 +2,15 @@ import React from 'react';
 
 // components
 import Header from '@/components/organisms/Header';
-import Footer from '@/components/organisms/Footer';
+import BlogPage from '@/components/templates/BlogPage';
 
 
 export default function Home() {
-  
 
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <BlogPage />
+    </>
   )
 }
