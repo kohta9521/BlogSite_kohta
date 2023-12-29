@@ -11,14 +11,14 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.logoBox}>
-                <Logo
+                {/* <Logo
                     id={2}
                     link='/'
                     size='small'
-                />
+                /> */}
             </div>
             <div className={styles.menuBox}>
-                menuBox
+                footer
             </div>
         </div>
     )
