@@ -26,7 +26,7 @@ const Logo = ({
         },
         medium: {
             width: 300,
-            height: 65
+            height: 60
         },
         large: {
             width: 350,
@@ -38,7 +38,7 @@ const Logo = ({
         <Link className={`${styles.logoLink} ${styles[size]}`} href={link} key={id}>
             <Image
                 className={styles.logoImage}
-                src="/images/blog_logo_white.png"
+                src="/images/blog_logo_blue.png"
                 width={imageSize.width}
                 height={imageSize.height}
                 alt="logo"
