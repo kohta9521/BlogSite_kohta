@@ -1,8 +1,8 @@
 import React from "react";
+import Link from "next/link";
 
 // scss import
 import styles from "./styles/BoxButton.module.scss";
-import Link from "next/link";
 
 // type
 export type BoxButtonProps = {
@@ -18,7 +18,7 @@ const BoxButton = ({
     text,
     size = "medium",
     color = "blue",
-    link,
+    link = "/"
     }: BoxButtonProps) => {
     return (
         <Link

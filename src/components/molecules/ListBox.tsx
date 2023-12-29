@@ -19,7 +19,7 @@ const ListBox = () => {
             />
             <List
                 id={1}
-                text='Kohta Blogとは'
+                text='Kohta Tech Blogとは'
                 link='/about'
                 size='medium'
                 color='black'
