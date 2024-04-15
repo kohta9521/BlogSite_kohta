@@ -1,0 +1,29 @@
+.logoLink {
+  cursor: pointer;
+  text-decoration: none;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  .logoImage {
+    cursor: pointer;
+  }
+}
+
+// props
+.small {
+  width: 150px;
+  height: auto;
+}
+.medium {
+  width: 210px;
+  height: auto;
+}
+.large {
+  width: 300px;
+  height: auto;
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 500px) {
+}
