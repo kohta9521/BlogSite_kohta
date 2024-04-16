@@ -11,7 +11,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logoBox}>
-          <Logo id={1} link='/' />
+          <Logo id={1} size='small' link='/' />
         </div>
       </div>
     </header>
