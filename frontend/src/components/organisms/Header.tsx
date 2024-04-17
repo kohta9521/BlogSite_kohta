@@ -5,14 +5,16 @@ import styles from './styles/Header.module.scss'
 
 // components
 import Logo from '../atoms/Logo'
+import HamburgerBtn from '../molecules/HamburgerBtn'
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logoBox}>
-          <Logo id={1} link='/' />
+          <Logo id={1} size='medium' link='/' />
         </div>
+        <HamburgerBtn />
       </div>
     </header>
   )
