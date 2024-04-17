@@ -8,7 +8,7 @@ import Link from 'next/link'
 import styles from './styles/Logo.module.scss'
 
 // props
-export type LogoProps = {
+export interface LogoProps {
   id: number
   link: string
   size?: 'small' | 'medium' | 'large'

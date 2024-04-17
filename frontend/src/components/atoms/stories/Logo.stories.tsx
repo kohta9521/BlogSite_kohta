@@ -1,8 +1,6 @@
-import React from 'react'
-
 import { StoryObj, Meta } from '@storybook/react'
 
-import Logo, { LogoProps } from '../Logo'
+import Logo from '../Logo'
 
 const meta: Meta = {
   title: 'Atoms/Logo',
@@ -30,9 +28,9 @@ const meta: Meta = {
 
 export default meta
 
-type Logo = StoryObj<typeof Logo>
+type LogoStory = StoryObj<typeof Logo>
 
-export const Default: Logo = {
+export const Default: LogoStory = {
   args: {
     id: 1,
     link: '/',
@@ -40,7 +38,7 @@ export const Default: Logo = {
   },
 }
 
-export const Small: Logo = {
+export const Small: LogoStory = {
   args: {
     id: 1,
     link: '/',
@@ -48,7 +46,7 @@ export const Small: Logo = {
   },
 }
 
-export const Medium: Logo = {
+export const Medium: LogoStory = {
   args: {
     id: 1,
     link: '/',
@@ -56,7 +54,7 @@ export const Medium: Logo = {
   },
 }
 
-export const Large: Logo = {
+export const Large: LogoStory = {
   args: {
     id: 1,
     link: '/',
