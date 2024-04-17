@@ -5,6 +5,7 @@ import styles from './styles/Header.module.scss'
 
 // components
 import Logo from '../atoms/Logo'
+import HamburgerBtn from '../molecules/HamburgerBtn'
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         <div className={styles.logoBox}>
           <Logo id={1} size='small' link='/' />
         </div>
+        <HamburgerBtn />
       </div>
     </header>
   )
