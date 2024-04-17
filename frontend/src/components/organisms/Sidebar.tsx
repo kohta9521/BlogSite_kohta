@@ -2,7 +2,7 @@ import React from 'react'
 
 // scss
 import styles from './styles/Sidebar.module.scss'
-import SidebarSection from './SidebarSection'
+import SidebarSection from '../molecules/SidebarSection'
 
 // components
 
