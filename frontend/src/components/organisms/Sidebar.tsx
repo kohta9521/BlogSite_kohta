@@ -41,7 +41,7 @@ const Sidebar = () => {
         <CategoryText id={1} link='/category' text='Frontend' />
       </SidebarSection>
       <SidebarSection jaTitle='# アーカイブ' enTitle='ARCHIVE'>
-        <select>
+        <select className={styles.selectTag}>
           <option>2024年4月</option>
           <option>2024年3月</option>
           <option>2024年2月</option>
