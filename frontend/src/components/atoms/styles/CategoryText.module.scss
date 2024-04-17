@@ -1,0 +1,17 @@
+.box {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  .border {
+    display: block;
+    width: 10px;
+    height: 1.5px;
+    background-color: black;
+    margin-right: 5px;
+  }
+  .text {
+    display: block;
+  }
+}

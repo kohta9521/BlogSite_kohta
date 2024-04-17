@@ -1,0 +1,14 @@
+.box {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1.5px solid black;
+  .date {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
