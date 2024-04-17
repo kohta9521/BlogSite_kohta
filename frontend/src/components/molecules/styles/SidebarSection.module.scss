@@ -1,0 +1,35 @@
+.sectionBox {
+  .titleBox {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    .jaTitle {
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+    .enTitle {
+    }
+  }
+  .flexBox {
+    display: flex;
+    width: 100%;
+    height: auto;
+    .leftBox {
+      width: 30px;
+      height: auto;
+      padding-left: 15px;
+      margin-right: 20px;
+      .border {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+      }
+    }
+    .rightBox {
+      widows: calc(100% - 50px);
+      margin-top: 20px;
+    }
+  }
+}
