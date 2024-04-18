@@ -5,7 +5,7 @@ import styles from './error/Not-fontd.module.scss'
 
 const NotFound = () => {
   return (
-    <div>
+    <div className={styles.notFroundPage}>
       <h1>hello this page is 404 error!!</h1>
     </div>
   )

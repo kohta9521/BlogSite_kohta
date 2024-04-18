@@ -4,6 +4,7 @@
   right: 30px;
   width: 100px;
   overflow: hidden;
+  cursor: pointer;
   .hamburger {
     cursor: pointer;
     background-color: transparent;
@@ -16,6 +17,7 @@
     margin: 0 auto;
 
     span {
+      cursor: pointer;
       display: block;
       background: black;
       transition: all 0.2s linear;
@@ -43,8 +45,11 @@
     }
 
     .open {
+      z-index: 999;
+      cursor: pointer;
       &:nth-child(1) {
         width: 100%;
+        background-color: white;
         transform: rotate(45deg) translateY(29px) translateX(0px);
       }
 
@@ -54,11 +59,13 @@
 
       &:nth-child(3) {
         width: 100%;
+        background-color: white;
         transform: rotate(-45deg) translateY(-15px) translateX(14px);
       }
     }
   }
   .menu {
+    display: none;
     .text {
       font-size: 16px;
       font-weight: 550;
