@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  # サービス名
+  golang-api:
+    # コンテナ名
+    container_name: golang-api-container_test
+    # Dockerfileのあるディレクトリを指定
+    build: /images/golang-api
+    # ローカルのフォルダをコンテナのフォルダと同期させる
+    volumes:
+      - type: bind
+        source: ../../go/sample-app
+        target: /go/src/app
+    # ホストの127.0.0.1:1323からコンテナの1323に繋ぐ
+    ports:
+      - "127.0.0.1:1323:1323"

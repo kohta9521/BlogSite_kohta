@@ -1,7 +1,30 @@
 .footer {
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   height: auto;
   padding: 30px;
+  padding-top: 100px;
   background-color: black;
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    .leftBox {
+      width: 50%;
+      height: auto;
+      border: 1px solid red;
+    }
+    .rightBox {
+      width: 50%;
+      height: auto;
+      border: 1px solid red;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
 }
