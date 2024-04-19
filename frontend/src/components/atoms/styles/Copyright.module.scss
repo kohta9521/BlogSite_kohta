@@ -1,0 +1,17 @@
+.copyBox {
+  position: absolute;
+  top: calc(100vh - 50%);
+  left: -100px;
+  position: fixed;
+  z-index: 999;
+  .copy {
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 768px) {
+}

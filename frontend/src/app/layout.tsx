@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.scss'
+import Copyright from '@/components/atoms/Copyright'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <body className={inter.className}>{children}</body>
+      <Copyright />
     </html>
   )
 }

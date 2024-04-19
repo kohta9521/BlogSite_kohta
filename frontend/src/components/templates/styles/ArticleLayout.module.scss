@@ -1,0 +1,79 @@
+.main {
+  width: 62%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  border: 1px solid red;
+  display: flex;
+  .leftBox {
+    width: 50px;
+    height: auto;
+    border: 1px solid red;
+    margin-right: 30px;
+    .goodIcon {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      margin-bottom: 2px;
+    }
+    .goodNumber {
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 20px;
+    }
+    .snsIcon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  .centerBox {
+    width: 820px;
+    max-width: 820px;
+    margin-right: 30px;
+    .mainArticleBox {
+      width: 100%;
+      padding: 32px 65px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(244, 244, 244);
+    }
+    .advertisementBox {
+      width: 100%;
+      padding: 32px 65px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(244, 244, 244);
+      display: flex;
+      justify-content: space-between;
+    }
+    .recommendBox {
+      width: 100%;
+      padding: 32px 65px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: rgb(244, 244, 244);
+      .title {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .rightBox {
+    width: 300px;
+    height: auto;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 500px) {
+}
