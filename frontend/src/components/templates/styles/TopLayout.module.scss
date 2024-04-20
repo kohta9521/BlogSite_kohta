@@ -18,7 +18,7 @@
 @media screen and (max-width: 1280px) {
   .topLayout {
     width: 80%;
-    height: 3000px;
+    height: auto;
     margin: 0 auto;
     display: block;
     .leftArticleBox {
@@ -32,14 +32,17 @@
 @media screen and (max-width: 500px) {
   .topLayout {
     width: 90%;
-    height: 3100px;
+    height: auto;
     margin: 0 auto;
     display: block;
     .leftArticleBox {
       width: 100%;
+      height: 3700px;
     }
     .sidebar {
       width: 100%;
+      height: 1100px;
+      padding-left: 10px;
     }
   }
 }
