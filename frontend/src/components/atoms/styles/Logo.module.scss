@@ -27,4 +27,29 @@
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 500px) {
+  .logoLink {
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    .logoImage {
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+
+  // props
+  .small {
+    width: 100px;
+    height: auto;
+  }
+  .medium {
+    width: 150px;
+    height: auto;
+  }
+  .large {
+    width: 200px;
+    height: auto;
+  }
 }
