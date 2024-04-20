@@ -21,7 +21,7 @@ export default function Home() {
         <ArticleCard
           id={1}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample.png'
+          imgLink='/images/sample/sample2.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='Lambda関数(+Docker)でPythonのFastAPIを動かしてみよう'
@@ -31,7 +31,7 @@ export default function Home() {
         <ArticleCard
           id={2}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample2.png'
+          imgLink='/images/sample/sample1.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='AWS入門】驚くほど簡単！EventBridgeスケジューラによるEC2の自動起動/停止'
@@ -41,7 +41,7 @@ export default function Home() {
         <ArticleCard
           id={3}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample3.png'
+          imgLink='/images/sample/sample.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='AWSのEC2(Amazon Linux 2023)の作成からFastAPI起動まで'
@@ -51,7 +51,7 @@ export default function Home() {
         <ArticleCard
           id={4}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample4.png'
+          imgLink='/images/sample/sample3.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='Laravel Reverbって何？WebSocketでリアルタイム？Chat?'
@@ -61,7 +61,7 @@ export default function Home() {
         <ArticleCard
           id={1}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample.png'
+          imgLink='/images/sample/sample2.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='Lambda関数(+Docker)でPythonのFastAPIを動かしてみよう'
@@ -71,7 +71,7 @@ export default function Home() {
         <ArticleCard
           id={2}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample2.png'
+          imgLink='/images/sample/sample1.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='AWS入門】驚くほど簡単！EventBridgeスケジューラによるEC2の自動起動/停止'
@@ -81,7 +81,7 @@ export default function Home() {
         <ArticleCard
           id={3}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample3.png'
+          imgLink='/images/sample/sample3.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='AWSのEC2(Amazon Linux 2023)の作成からFastAPI起動まで'
@@ -91,7 +91,7 @@ export default function Home() {
         <ArticleCard
           id={4}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample4.png'
+          imgLink='/images/sample/sample.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='Laravel Reverbって何？WebSocketでリアルタイム？Chat?'
@@ -101,7 +101,7 @@ export default function Home() {
         <ArticleCard
           id={3}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample3.png'
+          imgLink='/images/sample/sample3.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='AWSのEC2(Amazon Linux 2023)の作成からFastAPI起動まで'
@@ -111,7 +111,7 @@ export default function Home() {
         <ArticleCard
           id={4}
           link='/blogs/articles/1'
-          imgLink='/images/sample/sample4.png'
+          imgLink='/images/sample/sample.JPG'
           makeDate='2024-04-01'
           updateDate='2024-04-21'
           title='Laravel Reverbって何？WebSocketでリアルタイム？Chat?'
