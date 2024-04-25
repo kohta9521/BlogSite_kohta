@@ -13,7 +13,7 @@ import LinkArea from '@/components/organisms/LinkArea'
 import Footer from '@/components/organisms/Footer'
 import ArticleCard from '@/components/molecules/ArticleCard'
 
-export default function Home({ blog }: any) {
+export default function Home() {
   return (
     <main className={styles.main}>
       <Header />

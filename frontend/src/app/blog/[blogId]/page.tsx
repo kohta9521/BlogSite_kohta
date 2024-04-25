@@ -33,12 +33,7 @@ type Blog = {
 
 export default async function BlogDetail({ params }: Blog) {
   const response = await getBlog(params.blogId)
-  const { data, error } = await response.json()
-
-  // HTMLが安全であることを確認した上で挿入する
-  const createMarkup = () => {
-    return { __html: data.content }
-  }
+  const { data } = await response.json()
 
   return (
     <main>
