@@ -21,6 +21,13 @@ export interface ArticleCardProps {
   desc: string
 }
 
+// date format function
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString)
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+  return new Intl.DateTimeFormat('ja-JP', options).format(date)
+}
+
 const ArticleCard = ({
   id,
   link,
@@ -40,11 +47,11 @@ const ArticleCard = ({
         <div className={styles.dateFlexBox}>
           <div className={styles.iconFlex}>
             <SlCalender className={styles.icon} />
-            <p className={styles.date}>{makeDate}</p>
+            <p className={styles.date}>{formatDate(makeDate)}</p>
           </div>
           <div className={styles.iconFlex}>
             <TfiReload className={styles.icon} />
-            <p className={styles.date}>{updateDate}</p>
+            <p className={styles.date}>{formatDate(updateDate)}</p>
           </div>
         </div>
         <h3 className={styles.title}>{title}</h3>
