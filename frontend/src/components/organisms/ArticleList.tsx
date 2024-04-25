@@ -1,6 +1,11 @@
 import React from 'react'
 import { NextResponse } from 'next/server'
-import ArticleCard from '../../components/molecules/ArticleCard'
+
+// scss
+import styles from './styles/ArticleLIst.module.scss'
+
+// components
+import ArticleCard from '../molecules/ArticleCard'
 
 // cms
 import { client } from '../../libs/microcms'
@@ -45,14 +50,13 @@ function extractTags(categories: any) {
   }, [])
 }
 
-export default async function BlogList() {
+export default async function ArticleList() {
   const response = await listBlog()
   const { data, error } = await response.json()
 
   if (error != null) return <div>エラーが発生しました。</div>
   return (
     <main>
-      <h1>ここは記事一覧ページです</h1>
       <ul>
         {data != null ? (
           data.map((blog: any) => (
