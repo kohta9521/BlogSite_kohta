@@ -1,11 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
 import { NextResponse } from 'next/server'
+import ArticleCard from '../../components/molecules/ArticleCard'
 
 // cms
 import { client } from '../../libs/microcms'
-
-// scss
 
 async function listBlog() {
   try {
@@ -31,6 +29,22 @@ async function listBlog() {
   }
 }
 
+function extractTags(categories: any) {
+  // categoriesがundefinedまたはnullでないことを確認
+  if (!categories) {
+    return [] // categoriesがundefinedまたはnullなら空の配列を返す
+  }
+
+  // カテゴリオブジェクトからタグ配列を生成
+  return Object.keys(categories).reduce((acc, key) => {
+    // categories[key]が配列で要素を持っているかチェック
+    if (categories[key] && categories[key].length > 0) {
+      acc.push(key) // カテゴリ名をタグとして追加
+    }
+    return acc
+  }, [])
+}
+
 export default async function BlogList() {
   const response = await listBlog()
   const { data, error } = await response.json()
@@ -39,22 +53,25 @@ export default async function BlogList() {
   return (
     <main>
       <h1>ここは記事一覧ページです</h1>
-      {
-        <ul>
-          {data != null ? (
-            data.map((blog: { [key: string]: string }) => {
-              return (
-                <li key={blog.id}>
-                  <h3>{blog.title}</h3>
-                  <Link href={`/blog/${blog.id}`}>詳細へ</Link>
-                </li>
-              )
-            })
-          ) : (
-            <li>データがありませんでした。</li>
-          )}
-        </ul>
-      }
+      <ul>
+        {data != null ? (
+          data.map((blog: any) => (
+            <ArticleCard
+              key={blog.id}
+              id={blog.id}
+              link={`/blog/${blog.id}`}
+              imgLink='https://images.microcms-assets.io/assets/fff5c5a9e4e2499b8864200036628dfa/f727a253c1fc4ac6ab661ef68a03d83b/npm.jpeg'
+              makeDate={blog.createdAt} // 作成日
+              updateDate={blog.updatedAt} // 更新日
+              title={blog.title}
+              tags={extractTags(blog.category)} // カテゴリからタグを抽出
+              desc={blog.body} // 記事の本文
+            />
+          ))
+        ) : (
+          <li>データがありませんでした。</li>
+        )}
+      </ul>
     </main>
   )
 }
