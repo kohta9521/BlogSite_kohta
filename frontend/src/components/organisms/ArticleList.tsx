@@ -1,6 +1,11 @@
 import React from 'react'
 import { NextResponse } from 'next/server'
-import ArticleCard from '../../components/molecules/ArticleCard'
+
+// scss
+// import styles from './styles/ArticleLIst.module.scss'
+
+// components
+import ArticleCard from '../molecules/ArticleCard'
 
 // cms
 import { client } from '../../libs/microcms'
@@ -29,14 +34,13 @@ async function listBlog() {
   }
 }
 
-export default async function BlogList() {
+export default async function ArticleList() {
   const response = await listBlog()
   const { data, error } = await response.json()
 
   if (error != null) return <div>エラーが発生しました。</div>
   return (
     <main>
-      <h1>ここは記事一覧ページです</h1>
       <ul>
         {data != null ? (
           data.map((blog: any) => (
@@ -48,7 +52,7 @@ export default async function BlogList() {
               makeDate={blog.createdAt} // 作成日
               updateDate={blog.updatedAt} // 更新日
               title={blog.title}
-              tags={['front']} // カテゴリからタグを抽出
+              tags={['front', 'AWS']} // カテゴリからタグを抽出
               desc={blog.body} // 記事の本文
             />
           ))

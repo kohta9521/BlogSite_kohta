@@ -1,48 +1,30 @@
+import React from 'react'
 import Link from 'next/link'
-import { client } from '../../../libs/microcms'
-import { NextResponse } from 'next/server'
-import { redirect } from 'next/navigation'
 
-async function getBlog(blogId: string) {
-  try {
-    const response = await client.get({
-      endpoint: 'blog',
-      contentId: blogId,
-      customRequestInit: {
-        next: {
-          revalidate: 0,
-        },
-      },
-    })
+// components
+import ArticleLayout from '@/components/templates/ArticleLayout'
+import Header from '@/components/organisms/Header'
+import Hero from '@/components/organisms/Hero'
+import Footer from '@/components/organisms/Footer'
+import Contact from '@/components/organisms/Contact'
+import LinkArea from '@/components/organisms/LinkArea'
+import Body from '@/components/organisms/Body'
 
-    return NextResponse.json({
-      data: response ?? null,
-      error: null,
-    })
-  } catch (error: any) {
-    console.error('エラーが発生しました', error)
-    redirect('/404')
-  }
-}
+// cms
+// import { client } from '../../../libs/microcms'
 
-type Blog = {
-  params: {
-    blogId: string
-  }
-}
-
-export default async function BlogDetail({ params }: Blog) {
-  const response = await getBlog(params.blogId)
-  const { data } = await response.json()
-
+export default function BlogDetail() {
   return (
-    <main>
-      <h1>ここはブログ詳ページです</h1>
-      <h2>{data.title}</h2>
-      <p>作成日時: {data.createdAt}</p>
-      <p>更新日時: {data.updatedAt}</p>
-      <div dangerouslySetInnerHTML={{ __html: data.content || '' }} />
-      <Link href='/blog'>記事一覧へ</Link>
-    </main>
+    <>
+      <Header />
+      <Hero jaTitle='# ブログ' enTitle='BLOG' />
+      <ArticleLayout id={1}>
+        <Body />
+        <Link href='/'>記事一覧へ</Link>
+      </ArticleLayout>
+      <Contact />
+      <LinkArea />
+      <Footer />
+    </>
   )
 }
