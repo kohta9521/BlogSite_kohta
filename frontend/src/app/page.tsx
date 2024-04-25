@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 // scss
 import styles from '../styles/page.module.scss'
@@ -12,12 +13,13 @@ import LinkArea from '@/components/organisms/LinkArea'
 import Footer from '@/components/organisms/Footer'
 import ArticleCard from '@/components/molecules/ArticleCard'
 
-export default function Home() {
+export default function Home({ blog }: any) {
   return (
     <main className={styles.main}>
       <Header />
       <Hero jaTitle='# ブログ' enTitle='BLOG' />
       <TopLayout>
+        <Link href='/blog'>記事一覧へ</Link>
         <ArticleCard
           id={1}
           link='/blogs/articles/1'
