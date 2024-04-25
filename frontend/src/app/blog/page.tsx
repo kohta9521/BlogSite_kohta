@@ -29,14 +29,14 @@ async function listBlog() {
   }
 }
 
-function extractTags(categories: any) {
+function extractTags(categories: { [key: string]: string[] } | null | undefined): string[] {
   // categoriesがundefinedまたはnullでないことを確認
   if (!categories) {
     return [] // categoriesがundefinedまたはnullなら空の配列を返す
   }
 
   // カテゴリオブジェクトからタグ配列を生成
-  return Object.keys(categories).reduce((acc, key) => {
+  return Object.keys(categories).reduce((acc: string[], key: string) => {
     // categories[key]が配列で要素を持っているかチェック
     if (categories[key] && categories[key].length > 0) {
       acc.push(key) // カテゴリ名をタグとして追加
