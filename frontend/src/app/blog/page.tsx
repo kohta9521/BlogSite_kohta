@@ -29,22 +29,6 @@ async function listBlog() {
   }
 }
 
-function extractTags(categories: { [key: string]: string[] } | null | undefined): string[] {
-  // categoriesがundefinedまたはnullでないことを確認
-  if (!categories) {
-    return [] // categoriesがundefinedまたはnullなら空の配列を返す
-  }
-
-  // カテゴリオブジェクトからタグ配列を生成
-  return Object.keys(categories).reduce((acc: string[], key: string) => {
-    // categories[key]が配列で要素を持っているかチェック
-    if (categories[key] && categories[key].length > 0) {
-      acc.push(key) // カテゴリ名をタグとして追加
-    }
-    return acc
-  }, [])
-}
-
 export default async function BlogList() {
   const response = await listBlog()
   const { data, error } = await response.json()
@@ -64,7 +48,7 @@ export default async function BlogList() {
               makeDate={blog.createdAt} // 作成日
               updateDate={blog.updatedAt} // 更新日
               title={blog.title}
-              tags={extractTags(blog.category)} // カテゴリからタグを抽出
+              tags={['front']} // カテゴリからタグを抽出
               desc={blog.body} // 記事の本文
             />
           ))
