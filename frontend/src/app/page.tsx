@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 // scss
 import styles from '../styles/page.module.scss'
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <Hero jaTitle='# ブログ' enTitle='BLOG' />
       <TopLayout>
+        <Link href='/blog'>記事一覧へ</Link>
         <ArticleCard
           id={1}
           link='/blogs/articles/1'
