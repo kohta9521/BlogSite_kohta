@@ -8,8 +8,48 @@
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+  .container {
+    width: 90%;
+    margin: 150px auto;
+    border: 1px solid red;
+    display: flex;
+    .leftBox {
+      width: 50%;
+      border: 1px solid red;
+      text-align: left;
+      .menuTitle {
+        display: block;
+        width: 100%;
+        color: white;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+    .centerBox {
+      width: 25%;
+      border: 1px solid red;
+      text-align: left;
+      .menuTitle {
+        display: block;
+        width: 100%;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+    }
+    .rightBox {
+      width: 25%;
+      border: 1px solid red;
+    }
+  }
 }
 
 .open {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 600px) {
 }
