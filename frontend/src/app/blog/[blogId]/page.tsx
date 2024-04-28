@@ -8,7 +8,7 @@ import Hero from '@/components/organisms/Hero'
 import Footer from '@/components/organisms/Footer'
 import Contact from '@/components/organisms/Contact'
 import LinkArea from '@/components/organisms/LinkArea'
-import Body from '@/components/organisms/Body'
+import Body from '@/app/blog/[blogId]/components/Body'
 
 // cms
 // import { client } from '../../../libs/microcms'

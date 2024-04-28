@@ -1,8 +1,8 @@
 // scss
-import SubPageLayout from '@/components/templates/SubPageLayout'
 import styles from './About.module.scss'
 
 // components
+import SubPageLayout from '@/components/templates/SubPageLayout'
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
       jaTitle='# このサイトについて'
       desc='このサイトは、Next.jsで作成したサンプルサイトです。'
     >
-      <h1>sabout</h1>
+      <h1 style={styles.sample}>sabout</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ex nihil vel reprehenderit
         quam ipsa officia dignissimos magnam nemo quaerat.
