@@ -3,6 +3,19 @@
 import React, { useState, useEffect } from 'react'
 import { client } from '../../../libs/client'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+
+export interface Blog {
+  id: string
+  title: string
+  body: string
+  tags: { id: string; tag: string }[]
+  image: string
+  createdAt: string
+  updatedAt: string
+  publishedAt: string
+  revisedAt: string
+}
 
 const BlogDetail = () => {
   const [blog, setBlog] = useState<Blog | null>(null)
@@ -30,7 +43,7 @@ const BlogDetail = () => {
         <span key={tag.id}>#{tag.tag} </span>
       ))}
       <div dangerouslySetInnerHTML={{ __html: blog.body }} />
-      {blog.image && <img src={blog.image} alt='Blog Image' />}
+      {blog.image && <Image width='1000' height='700' src={blog.image} alt='Blog Image' />}
     </main>
   )
 }

@@ -11,19 +11,19 @@ import CategoryText from '../atoms/CategoryText'
 // client
 
 // APIから最新記事を3件取得
-export async function getServerSideProps() {
-  try {
-    const response = await client.getList({
-      endpoint: 'blog',
-      queries: { limit: 3 }, // 最新3件のみ取得
-    })
-    console.log('API response:', response.contents) // データの構造をログ出力
-    return { props: { articles: response.contents || [] } } // エラー時に空の配列を設定
-  } catch (error) {
-    console.error('Fetching articles failed:', error)
-    return { props: { articles: [] } } // エラー時は空の配列を返す
-  }
-}
+// export async function getServerSideProps() {
+//   try {
+//     const response = await client.getList({
+//       endpoint: 'blog',
+//       queries: { limit: 3 }, // 最新3件のみ取得
+//     })
+//     console.log('API response:', response.contents) // データの構造をログ出力
+//     return { props: { articles: response.contents || [] } } // エラー時に空の配列を設定
+//   } catch (error) {
+//     console.error('Fetching articles failed:', error)
+//     return { props: { articles: [] } } // エラー時は空の配列を返す
+//   }
+// }
 
 const Sidebar = ({ articles }: any) => {
   // articles が未定義の場合は空の配列を設定
