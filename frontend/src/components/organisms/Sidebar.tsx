@@ -9,7 +9,6 @@ import RecentArticle from '../atoms/RecentArticle'
 import CategoryText from '../atoms/CategoryText'
 
 // client
-import { client } from '../../libs/microcms'
 
 // APIから最新記事を3件取得
 export async function getServerSideProps() {
