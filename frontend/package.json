@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@agney/react-loading": "^0.1.2",
     "@storybook/addon-a11y": "^8.0.8",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",

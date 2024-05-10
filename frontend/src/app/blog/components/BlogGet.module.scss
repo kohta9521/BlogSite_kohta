@@ -1,3 +1,12 @@
+// loader
+.loader {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  color: rgb(53, 53, 53);
+}
+
 .blogContent {
   width: 100%;
   .flexBox {
@@ -73,9 +82,22 @@
   h5 {
   }
   p {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    line-height: 28.9px;
+    font-weight: 300;
+  }
+  a {
+    display: block;
+    padding: 20px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgb(129, 129, 129);
+      color: white;
+    }
   }
   li {
+    margin-left: 14px;
     margin-bottom: 10px;
   }
   strong {
@@ -83,7 +105,7 @@
     margin: 10px 0px;
   }
   hr {
-    margin: 10px 0px 20px 10px;
+    margin: 10px 0px 20px 0px;
   }
   code {
     display: block;
