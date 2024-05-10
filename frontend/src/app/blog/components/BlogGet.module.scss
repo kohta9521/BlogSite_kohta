@@ -1,0 +1,58 @@
+.blogContent {
+  width: 100%;
+  .flexBox {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    .tagsBox {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      .tag {
+        display: block;
+        margin-right: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        color: gray;
+      }
+    }
+    .dateBox {
+      display: flex;
+      p {
+        display: block;
+        align-items: center;
+        font-size: 13px;
+        line-height: 20px;
+        color: gray;
+      }
+      .createdAt {
+        margin-right: 10px;
+        .icon {
+          margin-right: 5px;
+        }
+      }
+      .updatedAt {
+        .icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .title {
+    display: block;
+    width: 100%;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .topImageBox {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    .topImage {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
