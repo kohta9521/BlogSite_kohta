@@ -20,6 +20,9 @@ import cheerio from 'cheerio'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/hybrid.css'
 
+// loading animation
+import { Puff } from '@agney/react-loading'
+
 // type
 export interface Blog {
   id: string
@@ -58,7 +61,10 @@ const BlogGet = () => {
     }
   }, [id])
 
-  if (!blog) return <p>Loading...</p>
+  if (!blog)
+    if (!blog) {
+      return <Puff className={styles.loader} />
+    }
 
   return (
     <div className={styles.blogContent}>
