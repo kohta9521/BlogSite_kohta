@@ -15,6 +15,11 @@ import { client } from '../../../libs/client'
 import { FaPencilAlt } from 'react-icons/fa'
 import { TfiReload } from 'react-icons/tfi'
 
+// code highlight
+import cheerio from 'cheerio'
+import hljs from 'highlight.js'
+import 'highlight.js/styles/hybrid.css'
+
 // type
 export interface Blog {
   id: string
@@ -22,6 +27,7 @@ export interface Blog {
   body: string
   tags: { id: string; tag: string }[]
   image: string
+  topImage: string
   createdAt: string
   updatedAt: string
   publishedAt: string
@@ -30,8 +36,9 @@ export interface Blog {
 
 const BlogGet = () => {
   const [blog, setBlog] = useState<Blog | null>(null)
-  const pathname = usePathname() // パス名を取得
-  const id = pathname.split('/').pop() // URLからIDを抽出
+  const [formattedBody, setFormattedBody] = useState<string | null>(null)
+  const pathname = usePathname()
+  const id = pathname.split('/').pop()
 
   useEffect(() => {
     if (id) {
@@ -39,6 +46,13 @@ const BlogGet = () => {
         .get({ endpoint: 'blog', contentId: id })
         .then((data) => {
           setBlog(data)
+          const $ = cheerio.load(data.body)
+          $('code').each(function () {
+            const unhighlightedCode = $(this).html() || ''
+            const highlightedCode = hljs.highlightAuto(unhighlightedCode).value
+            $(this).html(highlightedCode)
+          })
+          setFormattedBody($.html())
         })
         .catch((error) => console.error('Failed to load blog data', error))
     }
@@ -74,11 +88,11 @@ const BlogGet = () => {
           className={styles.topImage}
           width={500}
           height={300}
-          src={blog.image}
+          src={blog.topImage}
           alt='Blog Top Image'
         />
       </div>
-      <div dangerouslySetInnerHTML={{ __html: blog.body }} />
+      <div dangerouslySetInnerHTML={{ __html: formattedBody || '' }} />
     </div>
   )
 }

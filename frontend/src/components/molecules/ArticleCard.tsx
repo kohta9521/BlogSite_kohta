@@ -1,4 +1,6 @@
 import React from 'react'
+
+// next
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -11,14 +13,13 @@ import { TfiReload } from 'react-icons/tfi'
 
 // props
 export interface ArticleCardProps {
-  id: number
+  key: number
   link: string
   imgLink: string
   makeDate: string
   updateDate: string
   title: string
   tags: string[]
-  desc: string
 }
 
 // date format function
@@ -29,17 +30,16 @@ const formatDate = (dateString: string) => {
 }
 
 const ArticleCard = ({
-  id,
+  key,
   link,
   imgLink,
   makeDate,
   updateDate,
   title,
   tags,
-  desc,
 }: ArticleCardProps) => {
   return (
-    <Link key={id} href={link} className={styles.card}>
+    <Link key={key} href={link} className={styles.card}>
       <div className={styles.leftBox}>
         <Image className={styles.image} src={imgLink} width={240} height={144} alt='article' />
       </div>
@@ -62,7 +62,6 @@ const ArticleCard = ({
             </p>
           ))}
         </div>
-        <p className={styles.desc}>{desc}</p>
       </div>
     </Link>
   )
