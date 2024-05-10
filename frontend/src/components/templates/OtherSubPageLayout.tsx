@@ -17,6 +17,7 @@ const OtherSubPageLayout = ({ id, title, children }: OtherSubPageLayoutProps) =>
   return (
     <div key={id} className={styles.layout}>
       <Header />
+      <h1>{title}</h1>
       <div className={styles.main}>{children}</div>
     </div>
   )

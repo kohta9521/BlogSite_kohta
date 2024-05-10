@@ -3,9 +3,6 @@ import React from 'react'
 // scss
 import styles from '../styles/page.module.scss'
 
-// cms
-// import { client } from '../libs/microcms'
-
 // components
 import Header from '@/components/organisms/Header'
 import Hero from '@/components/organisms/Hero'
