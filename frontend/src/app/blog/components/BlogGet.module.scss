@@ -1,0 +1,186 @@
+.blogContent {
+  width: 100%;
+  .flexBox {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    .tagsBox {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      .tag {
+        display: block;
+        margin-right: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        color: gray;
+      }
+    }
+    .dateBox {
+      display: flex;
+      p {
+        display: block;
+        align-items: center;
+        font-size: 13px;
+        line-height: 20px;
+        color: gray;
+      }
+      .createdAt {
+        margin-right: 10px;
+        .icon {
+          margin-right: 5px;
+        }
+      }
+      .updatedAt {
+        .icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .title {
+    display: block;
+    width: 100%;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .topImageBox {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    .topImage {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 全てブログページのタグに対応するスタイル
+.blogContent {
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  h4 {
+  }
+  h5 {
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  strong {
+    display: block;
+    margin: 10px 0px;
+  }
+  hr {
+    margin: 10px 0px 20px 10px;
+  }
+  code {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    padding: 0px 20px 20px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .blogContent {
+    width: 100%;
+    .flexBox {
+      display: flex;
+      justify-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      .tagsBox {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        .tag {
+          display: block;
+          margin-right: 10px;
+          font-size: 13px;
+          line-height: 20px;
+          color: gray;
+        }
+      }
+      .dateBox {
+        display: flex;
+        p {
+          display: block;
+          align-items: center;
+          font-size: 13px;
+          line-height: 20px;
+          color: gray;
+        }
+        .createdAt {
+          margin-right: 10px;
+          .icon {
+            margin-right: 5px;
+          }
+        }
+        .updatedAt {
+          .icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .title {
+      display: block;
+      width: 100%;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .topImageBox {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 30px;
+      .topImage {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  // 全てブログページのタグに対応するスタイル
+  .blogContent {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+    }
+    h3 {
+    }
+    h4 {
+    }
+    h5 {
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    code {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0px 20px 20px 20px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}
