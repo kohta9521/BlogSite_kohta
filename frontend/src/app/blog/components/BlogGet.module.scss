@@ -50,9 +50,10 @@
   }
   .title {
     display: block;
-    width: 100%;
     font-size: 34px;
     margin-bottom: 20px;
+    word-wrap: break-word; /* 長い単語を折り返し */
+    hyphens: auto; /* ブラウザがサポートしている場合、自動でハイフンを挿入 */
   }
 
   .topImageBox {

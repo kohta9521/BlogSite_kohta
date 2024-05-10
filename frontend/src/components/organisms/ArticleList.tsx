@@ -15,8 +15,6 @@ const ArticleList = () => {
 
   return (
     <div>
-      <h1># おすすめ記事</h1>
-      <div></div>
       <h1># 記事一覧</h1>
       <div>
         {blogs.map((blog) => (
