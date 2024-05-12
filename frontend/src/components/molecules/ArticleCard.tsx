@@ -11,6 +11,9 @@ import styles from './styles/ArticleCard.module.scss'
 import { SlCalender } from 'react-icons/sl'
 import { TfiReload } from 'react-icons/tfi'
 
+// hooks
+import useAOS from '@/hooks/useAOS'
+
 // props
 export interface ArticleCardProps {
   key: number
@@ -38,8 +41,9 @@ const ArticleCard = ({
   title,
   tags,
 }: ArticleCardProps) => {
+  useAOS()
   return (
-    <Link key={key} href={link} className={styles.card}>
+    <Link key={key} href={link} className={styles.card} data-aos='fade-up'>
       <div className={styles.leftBox}>
         <Image className={styles.image} src={imgLink} width={240} height={144} alt='article' />
       </div>

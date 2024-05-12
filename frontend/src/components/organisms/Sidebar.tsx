@@ -29,7 +29,7 @@ const Sidebar = () => {
           <RecentArticle
             key={1}
             id={article.id}
-            link={`/blogs/articles/${article.id}`}
+            link={`/blog/${article.id}`}
             date={new Date(article.updatedAt).toLocaleDateString()}
             title={article.title}
           />
