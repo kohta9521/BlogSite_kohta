@@ -1,12 +1,12 @@
 .topLayout {
   width: 55%;
-  height: 2000px;
   margin: 0 auto;
-  margin-bottom: 200px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
   display: flex;
   .leftArticleBox {
     width: 65%;
-    height: 2000px;
+    min-height: 1000px;
     margin-right: 2%;
   }
   .sidebar {
@@ -37,11 +37,13 @@
     display: block;
     .leftArticleBox {
       width: 100%;
-      height: 3700px;
+      height: auto;
+      margin-bottom: 30px;
     }
     .sidebar {
       width: 100%;
-      height: 1100px;
+      height: auto;
+      padding: 20px 0px;
       padding-left: 10px;
     }
   }
