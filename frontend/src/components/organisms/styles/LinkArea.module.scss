@@ -3,7 +3,7 @@
   height: 200px;
   padding: 100px;
   .container {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,16 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .linkArea {
+    width: 100%;
+    height: 245px;
+    padding: 100px 0px;
+    .container {
+      width: 97%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
 }
 @media screen and (max-width: 500px) {
 }
