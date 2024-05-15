@@ -4,6 +4,7 @@ import React from 'react'
 // hooks
 import useBlogData from '@/hooks/useGetAllArticles'
 import useDesignationBlogData from '@/hooks/useDesignationArticles'
+import useAOS from '@/hooks/useAOS'
 
 // scss
 import styles from './styles/ArticleLIst.module.scss'
@@ -18,6 +19,9 @@ const ArticleList = () => {
   const blogs = useBlogData()
   const blogIds = ['ygozrkrtbw9', 'ccraa7de1', 'gni7b8zptul']
   const recommendBlogs = useDesignationBlogData({ ids: blogIds })
+
+  // AOSの初期化
+  useAOS()
 
   // データがまだロードされていない場合はローディングアニメーションを表示
   if (!blogs.length || !recommendBlogs.length) {
@@ -38,7 +42,9 @@ const ArticleList = () => {
   return (
     <div>
       <div className={styles.recommendBox}>
-        <h1 className={styles.sectionTitle}># おすすめ記事</h1>
+        <h1 className={styles.sectionTitle} data-aos='fade-up'>
+          # おすすめ記事
+        </h1>
         <div>
           {recommendBlogs.map((blog) => (
             <ArticleCard
@@ -53,7 +59,9 @@ const ArticleList = () => {
           ))}
         </div>
       </div>
-      <h1 className={styles.sectionTitle}># 記事一覧</h1>
+      <h1 className={styles.sectionTitle} data-aos='fade-up'>
+        # 記事一覧
+      </h1>
       <div>
         {blogs.map((blog) => (
           <ArticleCard
