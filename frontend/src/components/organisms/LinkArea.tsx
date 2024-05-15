@@ -4,11 +4,17 @@ import React from 'react'
 import styles from './styles/LinkArea.module.scss'
 
 // components
+import BannerBox from '../molecules/BannerBox'
+
+// components
 
 const LinkArea = () => {
   return (
     <div className={styles.linkArea}>
-      <div className={styles.container}></div>
+      <div className={styles.container}>
+        <BannerBox />
+        <BannerBox />
+      </div>
     </div>
   )
 }
