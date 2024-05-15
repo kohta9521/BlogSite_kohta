@@ -1,0 +1,15 @@
+.titleBox {
+  margin-bottom: 30px;
+  .en {
+    font-size: 16px;
+    color: red;
+  }
+  .ja {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}

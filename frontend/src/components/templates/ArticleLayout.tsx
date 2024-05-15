@@ -4,7 +4,6 @@ import React from 'react'
 import styles from './styles/ArticleLayout.module.scss'
 
 // components
-import RecommendArticle from '../molecules/RecommendArticle'
 import TableBox from '../molecules/TableBox'
 import AdBox from '../molecules/AdBox'
 
@@ -36,10 +35,10 @@ const ArticleLayout = ({ id, children }: ArticleLayoutProps) => {
           <AdBox />
           <AdBox />
         </div>
-        <div className={styles.recommendBox}>
+        {/* <div className={styles.recommendBox}>
           <p className={styles.title}>関連記事</p>
           <RecommendArticle id={1} link='/' img='/images/1.jpg' title='記事タイトル' />
-        </div>
+        </div> */}
       </div>
       <div className={styles.rightBox}>
         <AdBox />
