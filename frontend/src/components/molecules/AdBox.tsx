@@ -3,10 +3,14 @@ import React from 'react'
 // scss
 import styles from './styles/AdBox.module.scss'
 
+// random
+import { getRandomAffiliate } from '../../utils/getRandomAffiliate'
+
 const AdBox = () => {
+  const { html } = getRandomAffiliate()
   return (
-    <div className={styles.adBox}>
-      <a href='https://px.a8.net/svt/ejp?a8mat=3Z72YI+2WSB8Y+2PEO+1HYXZL' rel='nofollow'>
+    <div className={styles.adBox} dangerouslySetInnerHTML={{ __html: html }}>
+      {/* <a href='https://px.a8.net/svt/ejp?a8mat=3Z72YI+2WSB8Y+2PEO+1HYXZL' rel='nofollow'>
         <img
           width='250'
           height='250'
@@ -19,7 +23,7 @@ const AdBox = () => {
         height='1'
         src='https://www15.a8.net/0.gif?a8mat=3Z72YI+2WSB8Y+2PEO+1HYXZL'
         alt=''
-      />
+      /> */}
     </div>
   )
 }
