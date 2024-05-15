@@ -4,3 +4,16 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@media screen and (max-width: 1280px) {
+  .bannerBox {
+    width: 100%;
+    display: block;
+    .banner {
+      display: block;
+      width: 400px;
+      height: auto;
+      margin-bottom: 40px;
+    }
+  }
+}
