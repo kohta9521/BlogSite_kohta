@@ -16,7 +16,7 @@ import { Puff } from '@agney/react-loading'
 
 const ArticleList = () => {
   const blogs = useBlogData()
-  const blogIds = ['jp0_ye40crms', 'gni7b8zptul', '33jc2xlr39']
+  const blogIds = ['ygozrkrtbw9', 'ccraa7de1', 'gni7b8zptul']
   const recommendBlogs = useDesignationBlogData({ ids: blogIds })
 
   // データがまだロードされていない場合はローディングアニメーションを表示
