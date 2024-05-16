@@ -14,6 +14,7 @@ import ArticleCard from '../molecules/ArticleCard'
 
 // loading animation
 import { Puff } from '@agney/react-loading'
+import Link from 'next/link'
 
 const ArticleList = () => {
   const blogs = useBlogData()
@@ -62,7 +63,7 @@ const ArticleList = () => {
       <h1 className={styles.sectionTitle} data-aos='fade-up'>
         # 記事一覧
       </h1>
-      <div>
+      <div className={styles.blogBox}>
         {blogs.map((blog) => (
           <ArticleCard
             key={1}
@@ -74,6 +75,11 @@ const ArticleList = () => {
             tags={blog.tags.map((tag) => tag.tag)}
           />
         ))}
+      </div>
+      <div>
+        <Link className={styles.link} href='/blog' data-aos='fade-up'>
+          <p className={styles.text}>ブログ一覧ページに移動</p>
+        </Link>
       </div>
     </div>
   )

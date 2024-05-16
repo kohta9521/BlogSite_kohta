@@ -28,5 +28,23 @@ export const affiliateHTML = [
     <img border="0" width="250" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=240515522876&wid=001&eno=01&mid=s00000025692001005000&mc=1"></a>
     <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3Z72YQ+EHJQPE+5I8O+5ZEMP" alt="">`,
   },
+  {
+    html: `
+    <a href="https://px.a8.net/svt/ejp?a8mat=3Z73QU+DYHVCI+407E+656YP" rel="nofollow">
+<img border="0" width="250" height="250" alt="" src="https://www20.a8.net/svt/bgt?aid=240516534844&wid=001&eno=01&mid=s00000018689001032000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3Z73QU+DYHVCI+407E+656YP" alt="">`,
+  },
+  {
+    html: `
+    <a href="https://px.a8.net/svt/ejp?a8mat=3Z73QU+DYHVCI+407E+65EOH" rel="nofollow">
+<img border="0" width="250" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=240516534844&wid=001&eno=01&mid=s00000018689001033000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3Z73QU+DYHVCI+407E+65EOH" alt="">`,
+  },
+  {
+    html: `
+    <a href="https://px.a8.net/svt/ejp?a8mat=3Z73QV+9E68DU+4F8I+TT69D" rel="nofollow">
+    <img border="0" width="250" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=240516535568&wid=001&eno=01&mid=s00000020637005007000&mc=1"></a>
+    <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3Z73QV+9E68DU+4F8I+TT69D" alt="">`,
+  },
   // 他のリンクも追加
 ]
