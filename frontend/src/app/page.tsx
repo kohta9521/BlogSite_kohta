@@ -11,6 +11,7 @@ import Contact from '@/components/organisms/Contact'
 import LinkArea from '@/components/organisms/LinkArea'
 import Footer from '@/components/organisms/Footer'
 import ArticleList from '@/components/organisms/ArticleList'
+// import Genre from '@/components/organisms/Genre'
 
 // blog get fn
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero jaTitle='# 光太 テックブログ' enTitle='KOHTA TECH BLOG' />
       <TopLayout>
         <ArticleList />
+        {/* <Genre /> */}
       </TopLayout>
       <Contact />
       <LinkArea />

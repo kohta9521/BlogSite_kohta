@@ -41,7 +41,7 @@ const ArticleList = () => {
   }
 
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.recommendBox}>
         <h1 className={styles.sectionTitle} data-aos='fade-up'>
           # おすすめ記事
