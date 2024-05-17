@@ -16,6 +16,8 @@
     "@storybook/addon-a11y": "^8.0.8",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "aos": "^2.3.4",
     "cheerio": "^1.0.0-rc.12",
     "highlight.js": "^11.9.0",
