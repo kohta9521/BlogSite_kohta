@@ -1,0 +1,62 @@
+.card {
+  display: block;
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgb(195, 195, 195);
+  .imgBox {
+    width: 100%;
+    height: auto;
+    .image {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  .main {
+    padding: 15px;
+    .dateBox {
+      width: 100%;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      .iconFlex {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .icon {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+        .date {
+          font-size: 14px;
+        }
+      }
+    }
+    .titleBox {
+      width: 100%;
+      .title {
+        font-size: 17px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+    .tagsBox {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      .tag {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        font-size: 11px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
