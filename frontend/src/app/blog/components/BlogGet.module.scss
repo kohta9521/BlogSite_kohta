@@ -156,6 +156,24 @@
     position: relative;
     overflow: auto;
   }
+  blockquote {
+    position: relative; // 擬似要素の配置の基準点
+    padding-left: 20px; // 左側の内側余白
+    margin: 20px 0; // 上下の外側余白
+
+    &::before {
+      content: ''; // 擬似要素の内容は空
+      position: absolute; // 絶対位置指定
+      left: 0; // 左端から
+      top: 0; // 上端から
+      bottom: 0; // 下端まで
+      width: 4px; // 線の太さ
+      background-color: #ccc; // 線の色（グレー）
+    }
+
+    font-style: normal; // フォントスタイルは通常に
+    color: #333; // 文字色
+  }
 }
 
 @media screen and (max-width: 1280px) {

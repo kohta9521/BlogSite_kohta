@@ -4,13 +4,13 @@
   text-decoration: none;
   .text {
     position: relative;
-    display: block;
     width: auto;
-    color: white;
-    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
     font-weight: 700;
     &:hover {
-      color: pink;
+      color: rgb(0, 34, 255);
+      transform: all 0.3s;
     }
     &::after {
       content: '';
@@ -20,7 +20,7 @@
       bottom: -10px; /*テキストからの距離*/
       width: 0%; /*初期状態では下線非表示*/
       height: 2px; /*下線の高さ*/
-      background: #5bc8ac; /*下線の色*/
+      background: #2600ff; /*下線の色*/
       z-index: -1;
       transition: all 0.4s; /*アニメーション速度*/
     }
