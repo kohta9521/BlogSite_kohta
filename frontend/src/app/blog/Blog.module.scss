@@ -1,0 +1,21 @@
+.articleBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4列に均等に配置
+  grid-gap: 20px; // グリッドアイテム間の隙間を20pxに設定
+  padding: 0px; // コンテナ内側の余白を設定
+
+  @media (max-width: 1200px) {
+    // 画面幅が1200px以下の場合、3列表示
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    // 画面幅が900px以下の場合、2列表示
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    // 画面幅が600px以下の場合、1列表示
+    grid-template-columns: 1fr;
+  }
+}

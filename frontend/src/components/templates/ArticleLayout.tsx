@@ -42,6 +42,7 @@ const ArticleLayout = ({ id, children }: ArticleLayoutProps) => {
       </div>
       <div className={styles.rightBox}>
         <AdBox />
+        <AdBox />
         <TableBox />
       </div>
     </div>
