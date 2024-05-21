@@ -16,7 +16,7 @@ function useTagData() {
   useEffect(() => {
     // タグを取得
     client
-      .get({ endpoint: 'tag' })
+      .get({ endpoint: 'tag', queries: { limit: 20 } })
       .then((data) => setTags(data.contents))
       .catch((error) => console.error('Error fetching tags:', error))
   }, [])
