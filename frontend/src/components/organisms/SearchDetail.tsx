@@ -79,19 +79,23 @@ const SearchDetail = () => {
             <FaPencilAlt className={styles.icon} />
             投稿日
           </p>
-          <input type='date' className={styles.dateInput} />
+          <label className={styles.label1}>
+            <input type='date' className={styles.dateInput} />
+          </label>
         </div>
         <div className={styles.rightBox}>
           <p className={styles.title}>
             <IoReload className={styles.icon} />
             最終更新日
           </p>
-          <input type='date' className={styles.dateInput} />
+          <label className={styles.label1}>
+            <input type='date' className={styles.dateInput} />
+          </label>
         </div>
       </div>
       {/* 検索ボタン */}
       <Link className={styles.searchButton} href='/'>
-        この条件で検索
+        <p className={styles.text}>この条件で検索</p>
       </Link>
     </div>
   )
