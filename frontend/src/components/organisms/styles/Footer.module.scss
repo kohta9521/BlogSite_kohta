@@ -8,17 +8,20 @@
   .container {
     width: 60%;
     margin: 0 auto;
-    border: 1px solid red;
     display: flex;
     .leftBox {
-      width: 50%;
+      width: 30%;
       height: auto;
-      border: 1px solid red;
     }
     .rightBox {
-      width: 50%;
+      width: 70%;
       height: auto;
-      border: 1px solid red;
+      margin-top: 60px;
+      display: flex;
+      .menuBox {
+        width: auto;
+        min-width: 150px;
+      }
     }
   }
 }
@@ -34,17 +37,14 @@
     .container {
       width: 100%;
       margin: 0 auto;
-      border: 1px solid red;
       display: block;
       .leftBox {
         width: 100%;
         height: auto;
-        border: 1px solid red;
       }
       .rightBox {
         width: 100%;
         height: auto;
-        border: 1px solid red;
       }
     }
   }

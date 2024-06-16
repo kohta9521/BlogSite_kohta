@@ -15,7 +15,7 @@ const Contact = () => {
           jaTitle='# 創作依頼・ご相談'
           enTitle='REQUEST'
           desc='新しいサイト制作や、既存サイトの運用に関するお困りごとなどございましたらご依頼、ご相談ください。'
-          link='/contact'
+          link='/request'
         />
         <ContactCard
           id={1}
