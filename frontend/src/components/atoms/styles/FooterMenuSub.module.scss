@@ -1,0 +1,16 @@
+.link {
+  display: block;
+  width: auto;
+  text-decoration: none;
+  .text {
+    font-size: 13px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .link {
+    .text {
+    }
+  }
+}
