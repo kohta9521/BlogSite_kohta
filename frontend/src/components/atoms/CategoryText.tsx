@@ -1,10 +1,10 @@
 import React from 'react'
+
+// next
 import Link from 'next/link'
 
 // scss
 import styles from './styles/CategoryText.module.scss'
-
-// components
 
 // props
 export interface CategoryTextProps {
