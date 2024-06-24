@@ -15,7 +15,7 @@ const Footer = () => {
         <div className={styles.leftBox}>
           <Logo id={2} link='/' size='medium' />
         </div>
-        <div className={styles.rightBox}>
+        {/* <div className={styles.rightBox}>
           <div className={styles.menuBox}>
             <FooterMenuMain id={1} link='/' text='Home' />
             <FooterMenuSub id={1} link='/blog' text='おすすめ記事' />
@@ -36,7 +36,7 @@ const Footer = () => {
           <div className={styles.menuBox}>
             <FooterMenuMain id={5} link='/contact' text='Contact' />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
