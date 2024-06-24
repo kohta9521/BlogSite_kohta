@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     'storybook-addon-next-router',
     '@storybook/addon-a11y',
   ],
+
   framework: {
     name: '@storybook/nextjs',
     options: {},
@@ -20,4 +21,5 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../public'],
 }
+
 export default config
