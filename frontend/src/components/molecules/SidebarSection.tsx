@@ -3,8 +3,6 @@ import React from 'react'
 // scss
 import styles from './styles/SidebarSection.module.scss'
 
-// components
-
 // props
 interface SidebarSectionProps {
   jaTitle: string
