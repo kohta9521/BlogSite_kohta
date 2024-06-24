@@ -197,11 +197,17 @@
       padding-top: 0px;
       font-size: 30px;
       line-height: 36px;
+      font-weight: 700;
       &::before {
         display: none;
       }
     }
     p {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    li {
+      margin: 0.5em 0;
       font-size: 14px;
       line-height: 30px;
     }
