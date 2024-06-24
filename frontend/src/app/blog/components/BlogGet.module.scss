@@ -86,10 +86,23 @@
     font-size: 2em;
   }
   h2 {
-    font-size: 1.9em;
+    padding: 80px 0 20px 0;
+    font-size: 32px;
+    line-height: 36px;
+    &::before {
+      content: '';
+      display: block;
+      width: 7%;
+      height: 4px;
+      background-color: #000000;
+      margin-bottom: 40px;
+      margin-left: -30px;
+    }
   }
   h3 {
-    font-size: 1.75em;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 46px;
   }
   h4 {
     font-size: 1.5em;
@@ -103,8 +116,8 @@
 
   p {
     margin: 1em 0;
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 36px;
   }
 
   a {
@@ -125,12 +138,15 @@
 
   ul,
   ol {
+    padding: 50px 0;
     margin: 1em 0;
     padding-left: 2em;
   }
 
   li {
     margin: 0.5em 0;
+    font-size: 18px;
+    line-height: 36px;
   }
 
   tr {
@@ -177,7 +193,9 @@
 @media screen and (max-width: 1280px) {
   .blogContent {
     width: 100%;
-
+    h2 {
+      padding-top: 0px;
+    }
     .blogTitle {
       font-size: 30px;
       line-height: 40px;

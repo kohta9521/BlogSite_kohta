@@ -5,8 +5,6 @@ import styles from './styles/Footer.module.scss'
 
 // components
 import Logo from '../atoms/Logo'
-import FooterMenuMain from '../atoms/FooterMenuMain'
-import FooterMenuSub from '../atoms/FooterMenuSub'
 
 const Footer = () => {
   return (
