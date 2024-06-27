@@ -16,6 +16,7 @@ import Contact from '@/components/organisms/Contact'
 import LinkArea from '@/components/organisms/LinkArea'
 import Footer from '@/components/organisms/Footer'
 import BlogGet from '../components/BlogGet'
+import Recommend from '@/components/organisms/Recommend'
 
 const BlogDetail = () => {
   return (
@@ -24,6 +25,7 @@ const BlogDetail = () => {
       <ArticleLayout id={1}>
         <BlogGet />
       </ArticleLayout>
+      <Recommend />
       <Contact />
       <LinkArea />
       <Footer />
