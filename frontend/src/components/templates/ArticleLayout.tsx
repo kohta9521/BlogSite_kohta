@@ -4,6 +4,7 @@ import React from 'react'
 import styles from './styles/ArticleLayout.module.scss'
 
 // props
+
 export interface ArticleLayoutProps {
   id: number
   children: React.ReactNode

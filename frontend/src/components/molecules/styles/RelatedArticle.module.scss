@@ -1,0 +1,32 @@
+.relatedBox {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+  display: flex;
+  .leftBox {
+    .img {
+    }
+  }
+  .rightBox {
+    .articleTitle {
+    }
+  }
+  .icon {
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .relatedBox {
+    .leftBox {
+      .img {
+      }
+    }
+    .rightBox {
+      .articleTitle {
+      }
+    }
+  }
+  .icon {
+  }
+}

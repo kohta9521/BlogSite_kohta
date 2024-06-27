@@ -1,0 +1,18 @@
+.recommend {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  background-color: rgb(237, 237, 237);
+  .container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .recommend {
+    .container {
+    }
+  }
+}
