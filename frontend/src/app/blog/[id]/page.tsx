@@ -1,11 +1,5 @@
 import React from 'react'
 
-// next
-// import Head from 'next/head'
-
-// cms
-// import { client } from '../../../libs/client'
-
 // scss
 import styles from './Blog.module.scss'
 
