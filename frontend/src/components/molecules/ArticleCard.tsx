@@ -16,7 +16,7 @@ import useAOS from '@/hooks/useAOS'
 
 // props
 export interface ArticleCardProps {
-  key: number
+  key: string
   link: string
   imgLink: string
   makeDate: string
