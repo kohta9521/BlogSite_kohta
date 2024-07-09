@@ -16,7 +16,7 @@ export type FooterMenuSubProps = {
 const FooterMenuSub = ({ id, link, text }: FooterMenuSubProps) => {
   return (
     <Link className={styles.link} href={link} key={id}>
-      <p className={styles.text}>{text}</p>
+      <p className={styles.text}>・{text}</p>
     </Link>
   )
 }
