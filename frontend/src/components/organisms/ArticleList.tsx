@@ -49,7 +49,7 @@ const ArticleList = () => {
         <div>
           {recommendBlogs.map((blog) => (
             <ArticleCard
-              key={1}
+              key={blog.title}
               link={`/blog/${blog.id}`}
               imgLink={blog.topImage}
               makeDate={blog.createdAt}
@@ -69,7 +69,7 @@ const ArticleList = () => {
             blog, // 10件のみ表示
           ) => (
             <ArticleCard
-              key={1}
+              key={blog.title}
               link={`/blog/${blog.id}`}
               imgLink={blog.topImage}
               makeDate={blog.createdAt}
