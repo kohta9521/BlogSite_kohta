@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <Hero jaTitle='# 光太 テックブログ' enTitle='KOHTA TECH BLOG' />
+      <Hero jaTitle='# kohta9521 テックブログ' enTitle='KOHTA9521 TECH BLOG' />
       <TopLayout>
         <ArticleList />
         {/* <Genre /> */}
