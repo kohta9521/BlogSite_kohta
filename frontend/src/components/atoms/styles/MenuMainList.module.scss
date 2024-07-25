@@ -1,36 +1,13 @@
 .menu {
-  width: 100%;
-  height: 100px;
-  text-decoration: none;
   .text {
-    position: relative;
-    width: auto;
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    font-weight: 700;
-    &:hover {
-      color: rgb(0, 34, 255);
-      transform: all 0.3s;
-    }
-    &::after {
-      content: '';
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: -10px; /*テキストからの距離*/
-      width: 0%; /*初期状態では下線非表示*/
-      height: 2px; /*下線の高さ*/
-      background: #2600ff; /*下線の色*/
-      z-index: -1;
-      transition: all 0.4s; /*アニメーション速度*/
-    }
-    &:hover::after {
-      width: 100%; /*ホバー時に下線表示*/
-    }
+    color: white;
   }
 }
 
 @media screen and (max-width: 1280px) {
-}
-@media screen and (max-width: 768px) {
+  .menu {
+    .text {
+      color: white;
+    }
+  }
 }
