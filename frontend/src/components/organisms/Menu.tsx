@@ -16,7 +16,7 @@ const Menu = ({ isOpen }: MenuProps) => {
       <div className={styles.container}>
         <div className={styles.leftBox}>
           <h2 className={styles.menuTitle}>MainMenu</h2>
-          <MenuMainList id={1} link='#about' text='About Me' />
+          <MenuMainList id={1} link='/about' text='About Me' />
           <MenuMainList id={1} link='#about' text='About Me' />
         </div>
         <div className={styles.centerBox}>
